@@ -2,7 +2,7 @@ const LEFT_ARROW_KEY = 37;
 const RIGHT_ARROW_KEY = 39;
 
 let screens = document.querySelectorAll(`template`);
-let screenContent = document.querySelector(`.central`);
+let contentScreen = document.querySelector(`.central`);
 let numOfScreen = 0;
 
 setScreenByNum(numOfScreen);
@@ -20,5 +20,5 @@ document.onkeydown = (e) => {
 };
 
 function setScreenByNum(num) {
-    screenContent.innerHTML = screens[num].innerHTML;
+    contentScreen.innerHTML = screens[num].innerHTML;
 }
