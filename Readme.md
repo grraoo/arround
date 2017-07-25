@@ -1,6 +1,6 @@
-# Личный проект «Пиксель хантер» [![Build status][travis-image]][travis-url]
+# Личный проект  [![Build status][travis-image]][travis-url]
 
-* Студент: [Andrii Zaimak](https://up.htmlacademy.ru/ecmascript/2/user/311643).
+* Студент: [](https://up.htmlacademy.ru/ecmascript/2/user/311643).
 * Наставник: `Неизвестно`.
 
 ---
