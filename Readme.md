@@ -1,6 +1,6 @@
-# Личный проект  [![Build status][travis-image]][travis-url]
+# Личный проект [pixel-hunter][![Build status][travis-image]][travis-url]
 
-* Студент: [](https://up.htmlacademy.ru/ecmascript/2/user/311643).
+* Студент: [Илья Коваленко](https://htmlacademy.ru/profile/id35689).
 * Наставник: `Неизвестно`.
 
 ---
