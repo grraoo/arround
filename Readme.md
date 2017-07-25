@@ -1,4 +1,4 @@
-# Личный проект  [![Build status][travis-image]][travis-url]
+# Личный проект [pixel-hunter][![Build status][travis-image]][travis-url]
 
 * Студент: [Илья Коваленко](https://htmlacademy.ru/profile/id35689).
 * Наставник: `Неизвестно`.
