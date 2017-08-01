@@ -1,4 +1,5 @@
 import createElement from '../utils/elementCreator'
+import greeting from './greeting'
 import render from '../utils/render'
 import game1 from './game-1'
     
@@ -38,9 +39,14 @@ export default function rules() {
         </div>`)
     let startGameBtn = rulesTemplate.querySelector('.rules__button');
     let nameField = rulesTemplate.querySelector('.rules__input');
-
+    let backBtn = rulesTemplate.querySelector('.header__back');
+    
     startGameBtn.disabled = true;
        
+    backBtn.addEventListener('click', () => {
+        render(greeting())
+    })
+    
     nameField.addEventListener('keyup', () => {
        startGameBtn.disabled = nameField.value ? false : true;
     }) 

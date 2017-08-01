@@ -2,6 +2,7 @@ import createElement from '../utils/elementCreator';
 import { initialState } from '../data/data.js'
 import lvlStats from '../blocks/lvlStats'
 import header from '../blocks/header'
+import game3 from './game-3'
 import render from '../utils/render'
 
 export default function stats() {
@@ -117,6 +118,12 @@ export default function stats() {
         <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
       </div>
     </footer>`)
+    
+    let backBtn = statsTemplate.querySelector('.header__back');
+    
+    backBtn.addEventListener('click', () => {
+        render(game3())
+    })
     
     return statsTemplate;
 }

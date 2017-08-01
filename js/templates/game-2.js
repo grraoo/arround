@@ -5,6 +5,7 @@ import lvlStats from '../blocks/lvlStats'
 import header from '../blocks/header'
 import render from '../utils/render'
 import game3 from './game-3'
+import game1 from './game-1'
 
 export default function game2() {
     let gameTemplate = createElement(`
@@ -40,10 +41,14 @@ export default function game2() {
         <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
       </div>
     </footer>`)
-    
     let images = gameTemplate.querySelectorAll(`.game__option > img`);
+    let backBtn = gameTemplate.querySelector('.header__back');
     
-    [].forEach.call(images, (img) => {
+    backBtn.addEventListener('click', () => {
+        render(game1())
+    })
+    
+    Array.prototype.forEach.call(images, (img) => {
         img.addEventListener(`load`, (event) =>{
             calculateAspectRatioFit(img);
         });

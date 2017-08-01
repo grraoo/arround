@@ -5,6 +5,7 @@ import lvlStats from '../blocks/lvlStats'
 import header from '../blocks/header'
 import render from '../utils/render'
 import stats from './stats'
+import game2 from './game-2'
 
 export default function game3() {
     let gameTemplate = createElement(`
@@ -40,11 +41,16 @@ export default function game3() {
     </footer>`)
     let gameArea = gameTemplate.querySelector('.game__content');
     let images = gameTemplate.querySelectorAll(`.game__option > img`);
+    let backBtn = gameTemplate.querySelector('.header__back');
     
-    [].forEach.call(images, (img) => {
-        img.addEventListener(`load`, (event) =>{
+    backBtn.addEventListener('click', () => {
+        render(game2())
+    })
+    
+    Array.prototype.forEach.call(images, (img) => {
+        img.addEventListener(`load`, (event) => {
             calculateAspectRatioFit(img);
-        });
+        })
     })
     
     gameArea.addEventListener('click', (ev) => {
