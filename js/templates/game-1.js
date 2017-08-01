@@ -1,5 +1,6 @@
 import createElement from '../utils/elementCreator'
 import { initialState, stats } from '../data/data.js'
+import calculateAspectRatioFit from '../utils/resizeImg.js';
 import lvlStats from '../blocks/lvlStats'
 import render from '../utils/render'
 import header from '../blocks/header'
@@ -52,6 +53,14 @@ export default function game1() {
       </footer>`)
     let gameArea = gameTemplate.querySelector('.game__content')
     let formElements = gameArea.elements;
+    let images = gameTemplate.querySelectorAll(`.game__option > img`);
+    
+    [].forEach.call(images, (img) => {
+        img.addEventListener(`load`, (event) =>{
+            calculateAspectRatioFit(img);
+        });
+    })
+    
     gameArea.addEventListener('click', () => {
         if (formElements.question1.value && formElements.question2.value)
             render(game2());

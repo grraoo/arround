@@ -1,5 +1,6 @@
 import createElement from '../utils/elementCreator';
 import { initialState, stats } from '../data/data.js'
+import calculateAspectRatioFit from '../utils/resizeImg.js';
 import lvlStats from '../blocks/lvlStats'
 import header from '../blocks/header'
 import render from '../utils/render'
@@ -39,6 +40,14 @@ export default function game2() {
         <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
       </div>
     </footer>`)
+    
+    let images = gameTemplate.querySelectorAll(`.game__option > img`);
+    
+    [].forEach.call(images, (img) => {
+        img.addEventListener(`load`, (event) =>{
+            calculateAspectRatioFit(img);
+        });
+    })
     
     let gameForm = gameTemplate.querySelector('.game__content');
     gameForm.addEventListener('click', (ev) => {
