@@ -1,5 +1,5 @@
 export default function createDOMElement(markup) {
-    let elem = document.createElement('div');
+    let elem = document.createElement('template');
     elem.innerHTML = markup;
-    return elem;
+    return elem.content;
 }
