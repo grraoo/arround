@@ -49,11 +49,11 @@ gulp.task('style', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('js/main.js')
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(rollup({}, 'iife'))
-    .pipe(sourcemaps.write(''))
-    .pipe(gulp.dest('build/js'));
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(rollup({}, 'iife'))
+      .pipe(sourcemaps.write(''))
+      .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('imagemin', ['copy'], function () {
