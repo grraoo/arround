@@ -1,10 +1,10 @@
 import lvlStats from '../blocks/lvlStats'
 
 export default function game(stats, level) {
-    let answers = level.answers.map((answerImgRef, i) => {
+    let answers = level.answers.map((answer, i) => {
         return `
             <div class="game__option">
-                <img src="${answerImgRef}" alt="Option ${i+1}" width="468" height="458">
+                <img src="${answer.image}" alt="Option ${i+1}" width="468" height="458">
                 <label class="game__answer game__answer--photo">
                     <input name="question${i+1}" type="radio" value="photo">
                     <span>Фото</span>
