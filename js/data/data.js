@@ -8,22 +8,40 @@ export const levels = {
   '1': {
     question: `Угадайте для каждого изображения фото или рисунок?`,
     answers: [
-      `https://k42.kn3.net/CF42609C8.jpg`,
-      `http://i.imgur.com/1KegWPz.jpg`
+        {
+            image: `https://k42.kn3.net/CF42609C8.jpg`,
+            type: 'paint'
+        },
+        {
+            image: `http://i.imgur.com/1KegWPz.jpg`,
+            type: 'photo'
+        }
     ]
   },
   '2': {
     question: `Угадай, фото или рисунок?`,
     answers: [
-      `https://k32.kn3.net/5C7060EC5.jpg`
+        {
+            image: `https://k32.kn3.net/5C7060EC5.jpg`,
+            type: 'paint'
+        }
     ]
   },
   '3': {
     question: `Найдите рисунок среди изображений`,
     answers: [
-      `http://i.imgur.com/DKR1HtB.jpg`,
-      `http://i.imgur.com/1KegWPz.jpg`,
-      `https://i.imgur.com/DiHM5Zb.jpg`
+        {
+            image: `http://i.imgur.com/DKR1HtB.jpg`,
+            type: 'paint'
+        },
+        {
+            image: `http://i.imgur.com/1KegWPz.jpg`,
+            type: 'photo'
+        },
+        {
+            image: `http://i.imgur.com/1KegWPz.jpg`,
+            type: 'photo'
+        }
     ]
   }
 }
