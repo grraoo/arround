@@ -1,6 +1,6 @@
-import lives from '../blocks/lives'
+import livesBlock from '../blocks/lives'
 
-export default function header(state) {
+export default function header({ lives, time }) {
     let headerTemplate = `<header class="header">
         <div class="header__back">
             <span class="back">
@@ -8,8 +8,8 @@ export default function header(state) {
                 <img src="img/logo_small.png" width="101" height="44">
             </span>
         </div>
-        <h1 class="game__timer">NN</h1>
-        ${lives(state)}
+        <h1 class="game__timer">${time}</h1>
+        ${livesBlock(lives)}
       </header>`
       
     return headerTemplate;

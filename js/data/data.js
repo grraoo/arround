@@ -1,7 +1,17 @@
+const MAX_QUESTIONS_COUNT = 3;
+const TIME_FOR_QUESTION = 30;
+const MAX_LIVES = 3;
+const START_LEVEL = 1;
+
 export const initialState = {
-    level: 1,
-    time: 0,
-    lives: 3 
+    answers: [],
+    questionCount: MAX_QUESTIONS_COUNT,
+    level: null,
+    levelNum: START_LEVEL,
+    time: TIME_FOR_QUESTION,
+    timer: null,
+    lives: MAX_LIVES,
+    stats: new Array(MAX_QUESTIONS_COUNT).fill('unknown')
 }
 
 export const levels = {
