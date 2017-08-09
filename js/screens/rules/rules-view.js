@@ -1,8 +1,11 @@
 import AbstractView from '../../abstractView'
+import header from '../../blocks/header'
 
 export default class RulesView extends AbstractView {
     get template() {
-        return `<div class="rules">
+        return `
+        ${header()}
+        <div class="rules">
             <h1 class="rules__title">Правила</h1>
             <p class="rules__description">Угадай 10 раз для каждого изображения фото <img
               src="img/photo_icon.png" width="16" height="16"> или рисунок <img
@@ -23,6 +26,11 @@ export default class RulesView extends AbstractView {
     bind() {
         let startGameBtn = this.element.querySelector('.rules__button');
         let nameField = this.element.querySelector('.rules__input');
+        let backBtn = this.element.querySelector('.back');
+        
+        backBtn.addEventListener('click', () => {
+            this.onBackClick();
+        })
         
         startGameBtn.disabled = true;        
         
@@ -37,4 +45,6 @@ export default class RulesView extends AbstractView {
     }
     
     onStartGame() {}
+    
+    onBackClick() {}
 }
