@@ -7,6 +7,9 @@ export default class {
         this._view.onStart = () => {
             Application.showRules();
         }
+        this._view.onBackClick = () => {
+            Application.showIntro();
+        }
     }
     
     init() {
