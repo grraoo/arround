@@ -6,17 +6,14 @@ const state = {
     lives: 3,
     totalRounds: 10,
     currentRound: 0,
-    gameStat: []
+    stats: []
 };
 
 describe('Game params', () => {
     describe('Check answers', () => {
-        let roundState = {
-            answers: [{ type: 'photo' }, { type: 'photo'}, { type: 'paint' }]
-        }
-        let answers = ['paint', 'photo', 'paint'];
+        let roundState = { levelNum: 1 }
         it('should return true if received answers are correct', () => {
-            let answers = ['photo', 'photo', 'paint'];
+            let answers = ['paint', 'photo'];
             assert.equal(checkAnswers(roundState, answers), true);
         })
         it('should return false if received answers aren\'t correct', () => {
@@ -63,21 +60,25 @@ describe('Game params', () => {
         })
     })
     describe(`Game stats`, () => {
+        const state = {
+            stats: [],
+            levelNum: 1
+        }
         it(`Add 'correct' answer`, function () {
-            const newGameState = generateGameStat(state, true, 15).gameStat;
-            assert.equal(newGameState[newGameState.length - 1], `correct`);
+            const newGameState = generateGameStat(state, true, 15);
+            assert.equal(newGameState, `correct`);
         });
         it(`Add 'wrong' answer or user didn't answer`, function () {
-            const newGameState = generateGameStat(state, false, -1).gameStat;
-            assert.equal(newGameState[newGameState.length - 1], `wrong`);
-        });
-        it(`Add 'fast' answer`, function () {
-            const newGameState = generateGameStat(state, true, 9).gameStat;
-            assert.equal(newGameState[newGameState.length - 1], `fast`);
+            const newGameState = generateGameStat(state, false, 10);
+            assert.equal(newGameState, `wrong`);
         });
         it(`Add 'slow' answer`, function () {
-            const newGameState = generateGameStat(state, true, 21).gameStat;
-            assert.equal(newGameState[newGameState.length - 1], `slow`);
+            const newGameState = generateGameStat(state, true, 9);
+            assert.equal(newGameState, `slow`);
+        });
+        it(`Add 'fast' answer`, function () {
+            const newGameState = generateGameStat(state, true, 21);
+            assert.equal(newGameState, `fast`);
         });
     });
 })
