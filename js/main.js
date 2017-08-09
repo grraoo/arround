@@ -1,4 +1,3 @@
-import render from './utils/render'
-import intro from './templates/intro'
+import Application from './application'
 
-render(intro());
+Application.showIntro();

@@ -1,5 +1,5 @@
-export default function render(screen) {
+export default function render(view) {
     let contentScreen = document.querySelector(`.central`);
     contentScreen.innerHTML = '';
-    contentScreen.appendChild(screen);
+    contentScreen.appendChild(view.element);
 }

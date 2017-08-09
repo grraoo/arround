@@ -1,3 +1,7 @@
+import { levels } from '../data/data.js'
+
+const TIME_FOR_QUESTION = 30;
+
 export function refreshLivesCount(state, isAnswerCorrect) {
     if (state.lives < 0) {
         throw new RangeError('Can\'t get negative value of lives')
@@ -9,7 +13,7 @@ export function refreshLivesCount(state, isAnswerCorrect) {
 }
 
 export function checkAnswers(state, answers) {
-    return state.answers.every((answer, i) => {
+    return levels[state.levelNum].answers.every((answer, i) => {
         return answers[i] === answer.type
     }) 
 } 
@@ -32,7 +36,7 @@ export function calcAnswerPoints(state, answerType) {
 }
 
 export function generateGameStat(state, isAnswerCorrect, time) {
-    const newGameStats = state.gameStat.slice();
+    const newGameStats = state.stats.slice();
     let answerParam = null;
     let getAnswerParam = () => {
         if (isAnswerCorrect) {
@@ -50,7 +54,7 @@ export function generateGameStat(state, isAnswerCorrect, time) {
         return 'wrong'
     }
     
-    newGameStats.push(getAnswerParam());
-    
-    return Object.assign({}, state, { gameStat: newGameStats })
+    time = TIME_FOR_QUESTION - time;
+    newGameStats[state.levelNum - 1] = getAnswerParam();
+    return newGameStats;
 }
