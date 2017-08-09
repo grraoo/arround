@@ -15,6 +15,9 @@ export default class {
     }
 
     init() {
+        this._screen.onBackClick = () => {
+            Application.showIntro();
+        }
         this._screen.show();
     }
 
@@ -46,6 +49,9 @@ export default class {
             this._currentGameScreen = this._getGameScreen(this._state);
             this._stopTimer();
             this._resetTime();
+            this._screen.onBackClick = () => {
+                Application.showIntro();
+            }
             this._screen.show();
         } else {
             Application.showStats();

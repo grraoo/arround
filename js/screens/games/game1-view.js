@@ -27,6 +27,7 @@ export default class Game1View extends AbstractView {
         let formElements = gameArea.elements;
         let images = this.element.querySelectorAll(`.game__option > img`);
         let gameTimer = this.element.querySelector('.game__timer');
+        let backBtn = this.element.querySelector('.back');
         
         Array.prototype.forEach.call(images, (img) => {
             img.addEventListener(`load`, (event) =>{
@@ -50,6 +51,10 @@ export default class Game1View extends AbstractView {
             this._state.time--;
             gameTimer.innerHTML = this._state.time;
         }, 1000);
+        
+        backBtn.addEventListener('click', () => {
+            this.onBackClick();
+        })
     }
     
     onChangeGameScreen() {}
