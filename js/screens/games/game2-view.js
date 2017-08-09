@@ -25,6 +25,7 @@ export default class Game2View extends AbstractView {
         let formElements = gameArea.elements;
         let images = this.element.querySelectorAll(`.game__option > img`);
         let gameTimer = this.element.querySelector('.game__timer');
+        let backBtn = this.element.querySelector('.back');
             
         Array.prototype.forEach.call(images, (img) => {
             img.addEventListener(`load`, (event) =>{
@@ -35,7 +36,7 @@ export default class Game2View extends AbstractView {
         let gameForm = this.element.querySelector('.game__content');
         gameForm.addEventListener('click', (ev) => {
             if (checkAnswers(formElements)) {
-                let answerValues = [].map.call(formElements, (answer) => answer.value);
+                let answerValues = [].filter.call(formElements, (answer) => answer.checked).map((answer) => answer.value);
                 let isCorrect = isAnswerRight(this._state, answerValues);
                 clearInterval(this._state.timer);
                 this._state.stats = generateGameStat(this._state, isCorrect, this._state.time);
@@ -49,6 +50,10 @@ export default class Game2View extends AbstractView {
             this._state.time--;
             gameTimer.innerHTML = this._state.time;
         }, 1000);
+        
+        backBtn.addEventListener('click', () => {
+            this.onBackClick();
+        })
     }
     
     onChangeGameScreen() {}

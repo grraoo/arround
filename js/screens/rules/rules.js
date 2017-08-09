@@ -7,6 +7,9 @@ export default class {
         this._view.onStartGame = () => {
             Application.showGame();
         }
+        this._view.onBackClick = () => {
+            Application.showGreeting();
+        }
     }
     
     init() {

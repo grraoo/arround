@@ -1,8 +1,11 @@
 import AbstractView from '../../abstractView'
+import header from '../../blocks/header'
 
 export default class extends AbstractView {
     get template() {
-        return `<div class="result">
+        return `
+        ${header()}
+        <div class="result">
           <h1>Победа!</h1>
           <table class="result__table">
             <tr>
@@ -103,4 +106,13 @@ export default class extends AbstractView {
           </table>
         </div>`
     }
+    
+    bind() {
+        const backBtn = this.element.querySelector('.back');
+        backBtn.addEventListener('click', () => {
+            this.onBackClick();
+        })
+    }
+    
+    onBackClick() {}
 }
