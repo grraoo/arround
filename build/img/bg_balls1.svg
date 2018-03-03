@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200">
+  <g fill="none" fill-rule="evenodd" transform="translate(-19)">
+    <polyline stroke="#E7ECF1" stroke-width="4" points="19,25 105,125 230,60 422,107 553,101 718,42 904,125 1130,45 1299,148">
+    <animate attributeName="points" dur="20s" repeatCount="indefinite" 
+        from="19,25 105,125 230,60 422,107 553,101 718,42 904,125 1130,45 1299,148"
+          to="19,25 105,125 230,60 422,107 553,101 718,42 904,125 1130,45 1299,148"
+        values="19,25 105,125 230,60 422,107 553,101 718,42 904,125 1130,45 1299,148; 
+                19,30 105,125 230,42 422,107 553,110 718,42 904,90 1130,45 1299,148;
+                19,45 105,125 230,80 422,107 553,130 718,42 904,70 1130,45 1299,148; 
+                19,10 105,125 230,160 422,107 553,125 718,42 904,65 1130,45 1299,148; 
+                19,35 105,125 230,150 422,107 553,105 718,42 904,85 1130,45 1299,148;
+                19,25 105,125 230,60 422,107 553,101 718,42 904,125 1130,45 1299,148"
+        keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+  />
+</polyline>
+    <circle cx="19" cy="25" r="19" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="25"
+                to="25"
+                values="25; 30; 45; 10; 35; 25"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="105" cy="125" r="20" fill="#E7ECF1"/>
+        <circle cx="105" cy="126" r="6" fill="#FFF"/>
+    <circle cx="146" cy="131" r="7" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="131"
+                to="131"
+                values="131; 120; 122; 140; 138; 131"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="213" cy="37" r="4" fill="#E7ECF1"/>
+    <circle cx="230" cy="60" r="14" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="60"
+                to="60"
+                values="60; 42; 80; 160; 150; 60"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="408" cy="81" r="4" fill="#E7ECF1"/>
+    <circle cx="422" cy="107" r="19" fill="#E7ECF1"/>
+        <circle cx="422" cy="107" r="6" fill="#FFF"/>
+    <circle cx="433" cy="166" r="4" fill="#E7ECF1"/>
+    <circle cx="447" cy="84" r="6" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="84"
+                to="84"
+                values="84; 82; 70; 71; 90; 84"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="553" cy="101" r="12" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="101"
+                to="101"
+                values="101; 110; 130; 125; 105; 101"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="718" cy="42" r="24" fill="#E7ECF1"/>
+        <circle cx="718" cy="42" r="9" fill="#FFF"/>
+    <circle cx="724" cy="101" r="4" fill="#E7ECF1"/>
+    <circle cx="739" cy="71" r="4" fill="#E7ECF1"/>
+    <circle cx="904" cy="125" r="12" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="125"
+                to="125"
+                values="125; 90; 70; 65; 85; 125"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="920" cy="136" r="4" fill="#E7ECF1">
+        <animate attributeName="cy" dur="20s" repeatCount="indefinite" 
+                from="136"
+                to="136"
+                values="136; 115; 55; 35; 65; 136"
+                keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1"
+        />
+    </circle>
+    <circle cx="1093" cy="4" r="4" fill="#E7ECF1"/>
+    <circle cx="1130" cy="45" r="27" fill="#E7ECF1"/>
+        <circle cx="1130" cy="45" r="9" fill="#FFF"/>
+    <circle cx="1150" cy="91" r="6" fill="#E7ECF1"/>
+    <circle cx="1278" cy="190" r="4" fill="#E7ECF1"/>
+    <circle cx="1299" cy="148" r="21" fill="#E7ECF1"/>
+  </g>
+</svg>

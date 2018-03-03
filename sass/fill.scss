@@ -1,0 +1,16 @@
+.fill {
+  display: flex;
+  background-color: #3254a6;
+  position: relative;
+  z-index: 1;
+
+  &__state {
+    background-image: linear-gradient(to right, #3abbc3, #0697d9);
+    height: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+    padding: 5px;
+  }
+}

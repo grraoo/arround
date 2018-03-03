@@ -1,0 +1,14 @@
+.countdown {
+  &__caption {
+    font-size: 20px;
+    color: #609cd8;
+    text-align: center;
+  }
+
+  &__value {
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+  }
+}

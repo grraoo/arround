@@ -1,0 +1,49 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 75px;
+
+  &__link {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 30px 50px;
+    padding-left: 45px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    &--fb::before {
+      background-image: url("../img/icons/facebook-white.svg");
+    }
+
+    &--tw::before {
+      background-image: url("../img/icons/twitter-white.svg");
+    }
+
+    &--lin::before {
+      background-image: url("../img/icons/linkedin-white.svg");
+    }
+
+    &--tg::before {
+      background-image: url("../img/icons/telegram-white.svg");
+    }
+
+    &--mm::before {
+      background-image: url("../img/icons/medium-white.svg");
+    }
+  }
+}

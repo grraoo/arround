@@ -1,0 +1,41 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Fira Sans", Tahoma, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+
+  &--pa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 640px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1180px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.img-inline {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}

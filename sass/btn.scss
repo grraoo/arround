@@ -1,0 +1,17 @@
+.btn {
+  background-color: #0697d9;
+  outline: 0;
+  border: 0;
+  padding: 10px 25px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.15);
+  border-radius: 4px;
+  font-family: Fira Sans;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+
+  &__big {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="939" height="363" viewBox="0 0 939 363">
+  <g fill="none" fill-rule="evenodd" transform="translate(-26 -1)">
+    <g transform="translate(428 40)">
+      <path fill="#E7ECF1" d="M162,162 L147,0.718961734 C151.98611,0.239920105 156.991663,0 162,0 L162,162 Z"/>
+      <path fill="#3ABBC3" d="M162,162 L69,29.3992235 C92.0054647,13.4122906 118.778158,3.62826494 146.710723,1 L162,162 Z"/>
+      <path fill="#195464" d="M162,162 L9,108.977259 C20.1758587,76.604837 41.2936471,48.6082305 69.3266986,29 L162,162 Z"/>
+      <path fill="#0697D9" d="M162,161.900992 L7.01265184,209 C-2.94399757,176.303799 -2.2833929,141.29809 8.89978596,109 L162,161.900992 Z"/>
+      <path fill="#264691" d="M161.754897,162 L179,323.069061 C101.794382,331.35926 29.5984201,283.540581 7,209.145615 L161.754897,162 Z"/>
+      <path fill="#222953" d="M162,161.961526 L162,0 C251.470129,0 324,72.5126453 324,161.961526 C324,244.726761 261.584094,314.176303 179.271007,323 L162,161.961526 Z"/>
+      <circle cx="162" cy="162" r="89" fill="#FFF"/>
+    </g>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="804" y="181" fill="#222953">48.3%</tspan>  <tspan x="805.842" y="206" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Token Sale </tspan> <tspan x="805.842" y="226" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">(Pre-sale and Token Sale)</tspan>
+    </text>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="337.96" y="300" fill="#264691">22%</tspan> <tspan x="77.866" y="325" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Fund for community development and liquidity </tspan> <tspan x="131.864" y="345" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">(CDF – includes advisors, partners etc.)</tspan>
+    </text>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="337.66" y="200" fill="#0697D9">10%</tspan> <tspan x="23.532" y="225" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Support Fund for the holders of the Master nodes (NDF)</tspan>
+    </text>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="338" y="141" fill="#195464">10%</tspan>  <tspan x="344.57" y="166" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Team</tspan>
+    </text>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="336.16" y="21" fill="#808388">1.5%</tspan>  <tspan x="335" y="46" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Bounty</tspan>
+    </text>
+    <text font-family="FiraSans-Bold, Fira Sans" font-size="20" font-weight="bold">
+      <tspan x="331.88" y="72" fill="#3ABBC3">8.2%</tspan> <tspan x="114.252" y="97" fill="#1C1D20" font-family="FiraSans-Regular, Fira Sans" font-size="14" font-weight="normal">Bonus tokens for Pre-sale and Token Sale</tspan>
+    </text>
+    <path stroke="#979797" d="M580 35L392.989305 35M487.512161 63L394.995868 63M431.531676 130L396 130M420 199L393 199M445 299L391.990567 299M760 169L794 169"/>
+  </g>
+</svg>

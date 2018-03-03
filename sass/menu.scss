@@ -1,0 +1,16 @@
+.menu {
+  display: block;
+
+  &__list {
+    display: none;
+  }
+
+  &__toggle {
+    background-color: $c-bgazure;
+    font-size: 0;
+    height: 20px;
+    width: 60px;
+    border: 0;
+    outline: 0;
+  }
+}

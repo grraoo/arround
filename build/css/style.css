@@ -1,11 +1,306 @@
-html {
-  min-height: 100%;
+html,
+body {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Fira Sans", Tahoma, sans-serif; }
+
+.container {
+  margin: 0 auto;
+  width: 300px; }
+  .container--pa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+p {
+  font-size: 16px;
+  line-height: 20px; }
+
+.img-inline {
+  vertical-align: middle; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  background-image: linear-gradient(to right, #222953, #264691);
+  color: white;
+  padding: 15px 0;
+  position: relative; }
+  .header__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 15px; }
+    .header__top .logo img {
+      width: 100px;
+      height: auto; }
+
+.menu {
+  display: block; }
+  .menu__list {
+    display: none; }
+  .menu__toggle {
+    background-color: #3abbc3;
+    font-size: 0;
+    height: 20px;
+    width: 60px;
+    border: 0;
+    outline: 0; }
+
+.langs {
+  display: none; }
+
+.main-header {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15px; }
+
+.countdown__caption {
+  font-size: 20px;
+  color: #609cd8;
+  text-align: center; }
+
+.countdown__value {
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center; }
+
+.btn {
+  background-color: #0697d9;
+  outline: 0;
+  border: 0;
+  padding: 10px 25px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Fira Sans;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center; }
+  .btn__big {
+    margin: 0 auto; }
+
+.buy {
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+
+.section-header {
+  color: #264691;
+  text-align: center; }
+
+.fill {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3254a6;
+  position: relative;
+  z-index: 1; }
+  .fill__state {
+    background-image: linear-gradient(to right, #3abbc3, #0697d9);
+    height: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+    padding: 5px; }
+
+.faq__list {
+  padding: 0;
+  list-style: none; }
+
+.faq__item {
+  background: #e7ecf1;
+  border-radius: 4px;
+  padding: 25px 30px;
+  margin: 5px 0; }
+
+.faq__question {
+  font-size: 18px;
+  color: #264691;
+  line-height: 24px; }
+
+.faq__answer {
+  font-size: 14px;
+  line-height: 20px; }
+  .faq__answer p {
+    margin: .2em 0; }
+
+.footer {
+  background-image: linear-gradient(to right, #222953 0%, #264691 100%); }
+
+.social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 75px; }
+  .social__link {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 30px 50px;
+    padding-left: 45px;
+    position: relative; }
+    .social__link::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px; }
+    .social__link--fb::before {
+      background-image: url("../img/icons/facebook-white.svg"); }
+    .social__link--tw::before {
+      background-image: url("../img/icons/twitter-white.svg"); }
+    .social__link--lin::before {
+      background-image: url("../img/icons/linkedin-white.svg"); }
+    .social__link--tg::before {
+      background-image: url("../img/icons/telegram-white.svg"); }
+    .social__link--mm::before {
+      background-image: url("../img/icons/medium-white.svg"); }
+
+.email__header {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0; }
+
+.email p {
+  opacity: .75;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center; }
+
+.email__form {
+  max-width: 100%;
+  width: 480px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.email__input {
+  -ms-flex-positive: 99999;
+      flex-grow: 99999;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-family: inherit;
+  text-align: center; }
+
+.email__submit {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  width: 34%;
+  outline: 0;
+  border: 0;
+  padding: 20px 35px;
+  font-family: inherit;
+  font-size: 20px;
+  color: #ffffff;
+  background: #0697d9;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15); }
+
+.copyright {
+  display: -ms-flexbox;
+  display: flex; }
+  .copyright__text {
+    opacity: .5;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: right;
+    margin-left: 55px; }
+    .copyright__text a {
+      font: inherit;
+      color: inherit;
+      text-decoration: none; }
+      .copyright__text a:hover {
+        text-decoration: underline; }
+
+.team__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.team__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 8px; }
+  .team__item--main {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+
+.team__text {
+  display: none; }
+
+.team__link {
+  background-image: url("../img/icons/icon-linkedin.svg");
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto; }
+
+.team__name {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 0; }
+
+.team__job {
+  margin: 0;
+  opacity: .75;
+  font-size: 14px;
+  text-align: center; }
+
+html {
+  margin: 0;
+  min-height: 100%;
   padding: 0; }
 
 body {
-  color: #000000;
-  min-height: 100%; }
+  color: #1c1d20;
+  min-height: 100%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
 a {
-  color: #000000; }
+  color: #1c1d20; }
+
+@media (min-width: 640px) {
+    .container {
+      width: 640px; }
+    .email__input {
+      text-align: left; }
+    .team__item {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
+      .team__item--main {
+        -ms-flex-preferred-size: 33%;
+            flex-basis: 33%; } }
+
+@media (min-width: 1180px) {
+    .container {
+      width: 1180px; } }

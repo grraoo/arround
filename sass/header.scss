@@ -1,0 +1,18 @@
+.header {
+  background-image: linear-gradient(to right, $c-bgdblue, $c-bglblue);
+  color: white;
+  padding: 15px 0;
+  position: relative;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+  }
+}
