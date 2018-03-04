@@ -1,0 +1,29 @@
+.rate {
+  display: flex;
+  align-items: center;
+
+  color: #3ABBC3;
+}
+
+.rate__count {
+  margin-right: 5px;
+  flex-shrink: 0;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.rate__data {
+
+}
+
+.rate__stars {
+  height: 16px;
+  margin-bottom: 2px;
+  background-image: url(../img/icons/star.svg);
+  background-repeat: repeat-x;
+  background-position: left;
+}
+
+.rate__text {
+  font-size: 14px;
+}

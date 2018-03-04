@@ -90,7 +90,51 @@ img {
 .buy {
   text-align: center;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  color: #FFF; }
+  .buy--section {
+    padding: 50px 50px 83px;
+    background-image: linear-gradient(90deg, #222953 0%, #264691 100%); }
+    .buy--section .buy__finish {
+      margin-bottom: 40px; }
+    .buy--section .buy__action {
+      margin-bottom: 40px; }
+
+.buy__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #609CD8;
+  text-align: center; }
+
+.buy__time {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-align: center; }
+
+.buy__meta {
+  opacity: 0.5;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  line-height: 30px; }
+
+.buy__action p {
+  margin: 7px 0 0;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center; }
+
+.buy__action .btn {
+  width: 280px;
+  height: 70px;
+  margin-bottom: 7px; }
+
+.buy__rate {
+  display: inline-block; }
 
 .section-header {
   color: #264691;
@@ -185,6 +229,68 @@ img {
   color: #1C1D20;
   opacity: 0.75; }
 
+.sale__info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 35px 20px 10px;
+  background-image: linear-gradient(90deg, #222953 0%, #264691 100%);
+  box-shadow: 0 30px 60px 0 rgba(38, 70, 145, 0.3);
+  border-radius: 4px; }
+
+.sale__item {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.sale__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #3ABBC3;
+  line-height: 30px; }
+
+.sale__value {
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 30px; }
+
+.sale__detail {
+  opacity: 0.5;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 30px; }
+
+.sale__list {
+  margin: 30px 20px 50px;
+  font-size: 16px;
+  color: #1C1D20;
+  line-height: 22px; }
+
+.sale__tname {
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 30px;
+  color: #1C1D20;
+  text-align: center;
+  line-height: 30px; }
+
+.sale__bonus {
+  font-size: 20px;
+  color: #1C1D20; }
+
+.sale__caption {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1C1D20; }
+
 .roadmap {
   margin-bottom: 80px; }
 
@@ -273,6 +379,30 @@ img {
     margin-left: -2px;
     background: #E7ECF1;
     content: ''; }
+
+.rate {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #3ABBC3; }
+
+.rate__count {
+  margin-right: 5px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 45px;
+  font-weight: bold; }
+
+.rate__stars {
+  height: 16px;
+  margin-bottom: 2px;
+  background-image: url(../img/icons/star.svg);
+  background-repeat: repeat-x;
+  background-position: left; }
+
+.rate__text {
+  font-size: 14px; }
 
 .fill {
   display: -ms-flexbox;
