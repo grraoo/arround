@@ -133,7 +133,8 @@ img {
     margin: .2em 0; }
 
 .footer {
-  background-image: linear-gradient(to right, #222953 0%, #264691 100%); }
+  background-image: linear-gradient(to right, #222953 0%, #264691 100%);
+  padding-bottom: 35px; }
 
 .social {
   display: -ms-flexbox;
@@ -219,13 +220,14 @@ img {
 
 .copyright {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 35px; }
   .copyright__text {
     opacity: .5;
     font-size: 14px;
     color: #ffffff;
     text-align: right;
-    margin-left: 55px; }
+    margin-left: 40px; }
     .copyright__text a {
       font: inherit;
       color: inherit;
