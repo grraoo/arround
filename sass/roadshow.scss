@@ -1,0 +1,49 @@
+.roadshow {
+  padding-top: 70px;
+  padding-bottom: 115px;
+  background: #1C1D20;
+}
+
+.roadshow__title {
+  color: #FFF;
+}
+
+.roadshow__item {
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.roadshow__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 130px;
+  margin-bottom: 14px;
+  background: #FFF;
+  border-radius: 4px;
+}
+
+.roadshow__name {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 25px;
+}
+
+.roadshow__date {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+.roadshow__place {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #777777;
+  line-height: 20px;
+}

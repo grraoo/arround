@@ -1,0 +1,89 @@
+.platform {}
+
+.platform__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.platform__item {
+  position: relative;
+  z-index: 1;
+  flex-basis: 270px;
+
+  &:hover {
+    z-index: 10;
+    .platform__text {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.platform__icon {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: $c-bgazure;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 20px 40px 0 rgba(1,91,141,0.25);
+
+  @each $icon in miners, agency, users, ar_device_developers, brands_and_advisers, application-developers {
+    &--#{$icon} {
+      background-image: url('../img/icons/#{$icon}.svg');
+    }
+  }
+}
+
+.platform__name {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+
+.platform__text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s opacity;
+
+  &:before {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    display: block;
+    background: #E7ECF1;
+    box-shadow: 0 30px 60px 0 rgba(54,61,71,0.30);
+    border-radius: 4px;
+    content: '';
+  }
+}
