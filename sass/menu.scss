@@ -6,11 +6,44 @@
   }
 
   &__toggle {
-    background-color: $c-bgazure;
-    font-size: 0;
-    height: 20px;
+    position: relative;
+    display: block;
     width: 60px;
+    height: 34px;
+    box-sizing: border-box;
     border: 0;
     outline: 0;
+    padding: 0;
+    font-size: 0;
+    background: none;
+
+    span {
+      margin-top: -3px;
+    }
+
+    &:before,
+    &:after,
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      width: 60px;
+      height: 6px;
+      margin-left: -30px;
+      background-color: $c-bgazure;
+      border-radius: 2px;
+    }
+
+    &:before {
+      content: '';
+      transform: translate3d(0, -17px, 0);
+    }
+
+    &:after {
+      content: '';
+      width: 40px;
+      transform: translate3d(0, 11px, 0);
+    }
   }
 }

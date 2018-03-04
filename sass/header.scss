@@ -4,6 +4,8 @@
   padding: 15px 0;
   position: relative;
 
+  // height: 780px;
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -15,4 +17,8 @@
       height: auto;
     }
   }
+}
+
+.header__buy {
+  margin-bottom: 192px;
 }
