@@ -1,0 +1,29 @@
+.about {
+
+}
+
+.about__container {
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.about__content {
+  @media (min-width: $desktop) {
+    width: 680px;
+  }
+}
+
+.about__title {
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.about__partner {
+  @media (min-width: $desktop) {
+    width: 380px;
+  }
+}

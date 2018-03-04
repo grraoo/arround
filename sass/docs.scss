@@ -1,5 +1,7 @@
 .docs {
-
+  @media (min-width: $desktop) {
+    width: 380px;
+  }
 }
 
 .docs__title {
@@ -16,6 +18,10 @@
   flex-wrap: wrap;
   align-items: top;
   justify-content: flex-start;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .docs__link {

@@ -20,6 +20,10 @@
       pointer-events: all;
     }
   }
+
+  @media (min-width: $desktop) {
+    flex-basis: 380px;
+  }
 }
 
 .platform__icon {

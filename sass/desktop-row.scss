@@ -1,0 +1,7 @@
+.desktop-row {
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

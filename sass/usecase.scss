@@ -1,5 +1,10 @@
 .usecase {
+}
 
+.usecase__container {
+  @media (min-width: $desktop) {
+    width: 980px;
+  }
 }
 
 .usecase__item {
