@@ -4,4 +4,10 @@
 
   margin-top: 37px;
   margin-bottom: 53px;
+
+  @media (min-width: $desktop) {
+    font-size: 45px;
+    margin-top: 75px;
+    margin-bottom: 80px;
+  }
 }

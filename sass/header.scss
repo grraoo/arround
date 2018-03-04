@@ -11,14 +11,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-
-    .logo img {
-      width: 100px;
-      height: auto;
-    }
   }
 }
 
 .header__buy {
   margin-bottom: 192px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 202px;
+  }
 }

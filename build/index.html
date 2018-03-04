@@ -27,25 +27,25 @@
         <div class="menu" id="main-menu">
           <button class="menu__toggle"><span>menu</span></button>
           <ul class="menu__list">
-            <li><a href="#tokensale">Token sale</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#usercase">Use cases</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#tokensalechart">Tokens distribution</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#roadshow">Roadshow</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><button class="btn" type="button">Buy Tokens</button></li>
+            <li class="menu__list-item"><a href="#tokensale">Token sale</a></li>
+            <li class="menu__list-item"><a href="#about">About</a></li>
+            <li class="menu__list-item"><a href="#usercase">Use cases</a></li>
+            <li class="menu__list-item"><a href="#partners">Partners</a></li>
+            <li class="menu__list-item"><a href="#roadmap">Roadmap</a></li>
+            <li class="menu__list-item"><a href="#tokensalechart">Tokens distribution</a></li>
+            <li class="menu__list-item"><a href="#team">Team</a></li>
+            <li class="menu__list-item"><a href="#roadshow">Roadshow</a></li>
+            <li class="menu__list-item"><a href="#faq">FAQ</a></li>
+            <li class="menu__list-item"><button class="btn btn--small" type="button">Buy Tokens</button></li>
           </ul>
         </div>
 
       </div>
       <h1 class="main-header">
-        Advertising Network and Communication Platform in Augmented Reality
+        Advertising Network & Communication Platform in Augmented Realty
       </h1>
       <section class="header__buy buy">
-        <div class="container">
+        <div class="container buy__content">
           <div class="buy__finish">
             <p class="buy__title">Tokens Pre-Sale Ends in</p>
             <div class="buy__time">13 d : 9 h : 21 m</div>
@@ -54,14 +54,30 @@
             <button class="btn btn--big">Buy Tokens Now</button>
             <p>for to get a <b>25% bonus</b></p>
           </div>
+          <div class="buy__rate">
+            <div class="rate">
+              <div class="rate__count">4.8</div>
+              <div class="rate__data">
+                <div class="rate__stars" style="width:78px;"></div>
+                <div class="rate__text">ICO rated ICObench</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="fill">
-        <div class="fill__state" style="flex-basis: calc(316000% / 10000)">$175000</div>
-      </section>
+      <div class="fill">
+        <div class="fill__state" style="flex-basis: calc(316000% / 10000)">
+          <div class="fill__count">$175000</div>
+          <div class="fill__note fill__note--dynamic">Reached in 2 days</div>
+        </div>
+        <div class="fill__note">Pre-sale target is $1,000,000</div>
+      </div>
     </div>
     <div class="container container--pa">
-      <img src="img/city.svg" alt="">
+      <!-- <picture>
+        <source media="(min-width: 1180px)" srcset="img/city.svg" >
+        <img srcset="img/city-mobile.svg" alt="">
+      </picture> -->
     </div>
   </header>
   <main>
@@ -240,19 +256,36 @@
         </ul>
         <div class="sale__total">
           <h4 class="sale__tname">Total 1,450 mln Tokens to Sale</h4>
-          <div class="sale__graph">
-            <div class="sale__bonus sale__bonus--50">30</div>
-            <div class="sale__bonus sale__bonus--40">100</div>
-            <div class="sale__bonus sale__bonus--30">300</div>
-            <div class="sale__bonus sale__bonus--20">500</div>
-            <div class="sale__bonus sale__bonus--00">520</div>
-          </div>
-          <div class="sale__captions">
-            <div class="sale__caption sale__captions--50">50% Bonus</div>
-            <div class="sale__caption sale__captions--40">40% Bonus</div>
-            <div class="sale__caption sale__captions--30">30% Bonus</div>
-            <div class="sale__caption sale__captions--20">20% Bonus</div>
-            <div class="sale__caption sale__captions--00">0% Bonus</div>
+          <div class="sale__data">
+            <div class="sale__graph">
+              <div class="sale__sect sale__sect--50" style="width:24px;">30</div>
+              <div class="sale__sect sale__sect--40" style="width:81px;">100</div>
+              <div class="sale__sect sale__sect--30" style="width:244px;">300</div>
+              <div class="sale__sect sale__sect--20" style="width:407px;">500</div>
+              <div class="sale__sect sale__sect--00" style="width:424px;">520</div>
+            </div>
+            <div class="sale__captions">
+              <div class="sale__bonus">
+                <div class="sale__count">30 mln</div>
+                <div class="sale__val sale__val--50" style="width:100px;">50% Bonus</div>
+              </div>
+              <div class="sale__bonus">
+                <div class="sale__count">100 mln</div>
+                <div class="sale__val sale__val--40" style="width:157px;">40% Bonus</div>
+              </div>
+              <div class="sale__bonus">
+                <div class="sale__count">300 mln</div>
+                <div class="sale__val sale__val--30" style="width:103px;">30% Bonus</div>
+              </div>
+              <div class="sale__bonus">
+                <div class="sale__count">500 mln</div>
+                <div class="sale__val sale__val--20" style="width:400px;">20% Bonus</div>
+              </div>
+              <div class="sale__bonus">
+                <div class="sale__count">520 mln</div>
+                <div class="sale__val sale__val--00" style="width:420px;">0% Bonus</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

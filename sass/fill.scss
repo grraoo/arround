@@ -1,16 +1,44 @@
 .fill {
   display: flex;
+  height: 40px;
+  margin-bottom: 40px;
   background-color: #3254a6;
   position: relative;
   z-index: 1;
+}
 
-  &__state {
-    background-image: linear-gradient(to right, #3abbc3, #0697d9);
-    height: 100%;
-    font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
-    text-align: right;
-    padding: 5px;
+.fill__state {
+  position: relative;
+  background-image: linear-gradient(to right, #3abbc3, #0697d9);
+  font-size: 24px;
+  color: #ffffff;
+  text-align: right;
+  padding: 5px;
+}
+
+.fill__count {
+  font-weight: bold;
+}
+
+.fill__note {
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFF;
+  opacity: 0.5;
+  text-align: right;
+
+  &--dynamic {
+    right: auto;
+    left: 0;
+    width: 100%;
+    max-width: 50vw;
+
+    @media (min-width: $desktop) {
+      max-width: 920px;
+    }
   }
 }

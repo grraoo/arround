@@ -12,7 +12,11 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    height: 321px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/city-mobile.svg); }
 
 p {
   font-size: 16px;
@@ -37,9 +41,6 @@ img {
     -ms-flex-align: center;
         align-items: center;
     padding-top: 30px; }
-    .header__top .logo img {
-      width: 100px;
-      height: auto; }
 
 .header__buy {
   margin-bottom: 192px; }
@@ -47,7 +48,24 @@ img {
 .menu {
   display: block; }
   .menu__list {
-    display: none; }
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .menu__list-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 14px; }
+    .menu__list-item:last-child {
+      margin-right: 0; }
+    .menu__list-item a {
+      opacity: 0.75;
+      color: #FFF;
+      text-decoration: none;
+      transition: .3s opacity; }
+      .menu__list-item a:hover {
+        opacity: 1; }
   .menu__toggle {
     position: relative;
     display: block;
@@ -115,6 +133,10 @@ img {
   text-align: center; }
   .btn__big {
     margin: 0 auto; }
+  .btn--small {
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 2px; }
 
 .buy {
   text-align: center;
@@ -170,6 +192,10 @@ img {
   text-align: center; }
   .section-header--white {
     color: #FFF; }
+
+.logo img {
+  width: 100px;
+  height: auto; }
 
 .feat-partner {
   margin-top: 30px;
@@ -457,6 +483,9 @@ img {
     filter: grayscale(100%);
     transition: .4s filter; }
 
+.sale {
+  margin-bottom: 75px; }
+
 .sale__info {
   display: -ms-flexbox;
   display: flex;
@@ -513,14 +542,60 @@ img {
   text-align: center;
   line-height: 30px; }
 
+.sale__data {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.sale__graph {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  font-size: 0;
+  background: url(../img/pie-chart.svg) no-repeat center; }
+
+.sale__sect {
+  font-size: 16px;
+  line-height: 90px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center; }
+  .sale__sect--50 {
+    background: #3ABBC3; }
+  .sale__sect--40 {
+    background: #209FA7; }
+  .sale__sect--30 {
+    background: #195464; }
+  .sale__sect--20 {
+    background: #222953; }
+  .sale__sect--00 {
+    background: #BBBCBD; }
+
 .sale__bonus {
+  margin-bottom: 13px; }
+
+.sale__count {
   font-size: 20px;
   color: #1C1D20; }
 
-.sale__caption {
+.sale__val {
   font-weight: bold;
   font-size: 20px;
   color: #1C1D20; }
+  .sale__val--50 {
+    color: #3ABBC3; }
+  .sale__val--40 {
+    color: #209FA7; }
+  .sale__val--30 {
+    color: #195464; }
+  .sale__val--20 {
+    color: #222953; }
+  .sale__val--00 {
+    color: #BBBCBD; }
 
 .roadmap {
   margin-bottom: 80px; }
@@ -680,17 +755,37 @@ img {
 .fill {
   display: -ms-flexbox;
   display: flex;
+  height: 40px;
+  margin-bottom: 40px;
   background-color: #3254a6;
   position: relative;
   z-index: 1; }
-  .fill__state {
-    background-image: linear-gradient(to right, #3abbc3, #0697d9);
-    height: 100%;
-    font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
-    text-align: right;
-    padding: 5px; }
+
+.fill__state {
+  position: relative;
+  background-image: linear-gradient(to right, #3abbc3, #0697d9);
+  font-size: 24px;
+  color: #ffffff;
+  text-align: right;
+  padding: 5px; }
+
+.fill__count {
+  font-weight: bold; }
+
+.fill__note {
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFF;
+  opacity: 0.5;
+  text-align: right; }
+  .fill__note--dynamic {
+    right: auto;
+    left: 0;
+    width: 100%;
+    max-width: 50vw; }
 
 .faq__list {
   padding: 0;
@@ -895,7 +990,9 @@ a {
 
 @media (min-width: 640px) {
     .container {
-      width: 640px; }
+      width: 540px; }
+    .logo img {
+      width: 184px; }
     .email__input {
       text-align: left; }
     .team__item {
@@ -908,6 +1005,20 @@ a {
 @media (min-width: 1180px) {
     .container {
       width: 1180px; }
+      .container--pa {
+        background-image: url(../img/city.svg); }
+    p {
+      font-size: 20px;
+      line-height: 30px; }
+    .header__buy {
+      margin-bottom: 202px; }
+      .menu__list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+      .menu__toggle {
+        display: none; }
     .langs {
       display: -ms-flexbox;
       display: flex;
@@ -927,6 +1038,10 @@ a {
           opacity: 1; }
           .langs-link--active:hover {
             text-decoration: none; }
+    .main-header {
+      font-size: 45px;
+      margin-top: 75px;
+      margin-bottom: 80px; }
       .buy--section {
         padding-top: 81px;
         padding-bottom: 81px; }
@@ -944,6 +1059,8 @@ a {
     width: 880px; }
     .buy__finish {
       text-align: left; }
+    .section-header {
+      font-size: 50px; }
   .desktop-row {
     display: -ms-flexbox;
     display: flex;
@@ -961,9 +1078,13 @@ a {
   .about__content {
     width: 680px; }
   .about__title {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 18px;
+    margin-top: 70px; }
   .about__partner {
     width: 380px; }
+    .feat-partner {
+      margin-top: 90px; }
   .docs {
     width: 380px; }
     .docs__list {
@@ -987,6 +1108,29 @@ a {
       line-height: 30px; }
     .sale__litem {
       break-inside: avoid; }
+    .sale__data {
+      display: block; }
+    .sale__graph {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-bottom: 13px;
+      border-radius: 4px;
+      height: 90px;
+      background: none; }
+  .sale__captions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    white-space: nowrap; }
+    .sale__bonus {
+      margin-bottom: 0;
+      text-align: center; }
+    .sale__count {
+      display: none; }
+      .fill__note--dynamic {
+        max-width: 920px; }
     .faq__list {
       column-count: 2;
       column-gap: 20px; }

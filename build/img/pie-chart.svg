@@ -1,0 +1,34 @@
+<svg width="311" height="310" viewBox="0 0 311 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Pie chart</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1679 -4030)">
+<g id="Pie chart">
+<g id="pie_5">
+<use xlink:href="#path0_fill" transform="translate(1825.27 4030)" fill="#3ABBC3"/>
+</g>
+<g id="pie_4">
+<use xlink:href="#path1_fill" transform="translate(1760.33 4030.31)" fill="#209FA7"/>
+</g>
+<g id="pie_3">
+<use xlink:href="#path2_fill" transform="translate(1679.99 4049.17)" fill="#195464"/>
+</g>
+<g id="pie_2">
+<use xlink:href="#path3_fill" transform="translate(1682.75 4185)" fill="#222953"/>
+</g>
+<g id="pie_1">
+<use xlink:href="#path4_fill" transform="translate(1835 4030)" fill="#E7ECF1"/>
+</g>
+<g id="Oval 15">
+<use xlink:href="#path5_fill" transform="translate(1748 4098)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9.73253 155L 0 0.305857C 3.24017 0.102003 6.48595 0 9.73253 0L 9.73253 155Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 74.6718 154.694L 0 18.8666C 19.994 7.87481 42.1681 1.43264 64.9393 0L 74.6718 154.694Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 155.009 135.828L 2.75484 164.872C -9.82782 98.911 21.4935 32.3498 80.3375 0L 155.009 135.828Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 152.255 0L 265.245 106.105C 206.645 168.508 108.552 171.59 46.1497 112.99C 22.2885 90.583 6.13351 61.1971 0 29.0441L 152.255 0Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 0 155L 0 0C 85.6041 0 155 69.3959 155 155C 155 194.424 139.978 232.366 112.99 261.105L 0 155Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 87 174C 135.049 174 174 135.049 174 87C 174 38.9512 135.049 0 87 0C 38.9512 0 0 38.9512 0 87C 0 135.049 38.9512 174 87 174Z"/>
+</defs>
+</svg>

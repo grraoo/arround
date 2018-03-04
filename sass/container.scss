@@ -16,20 +16,33 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    height: 321px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/city-mobile.svg);
   }
 
   @media (min-width: $tablet) {
-    width: 640px;
+    width: 540px;
   }
 
   @media (min-width: $desktop) {
     width: 1180px;
+
+    &--pa {
+      background-image: url(../img/city.svg);
+    }
   }
 }
 
 p {
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .img-inline {

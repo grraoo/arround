@@ -11,6 +11,10 @@
   p {
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 90px;
+  }
 }
 
 .feat-partner__logo {
