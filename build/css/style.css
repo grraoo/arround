@@ -185,6 +185,95 @@ img {
   color: #1C1D20;
   opacity: 0.75; }
 
+.roadmap {
+  margin-bottom: 80px; }
+
+.roadmap__period {
+  position: relative; }
+  .roadmap__period--past .roadmap__item,
+  .roadmap__period--past .roadmap__year {
+    background: #264691;
+    color: #FFF; }
+    .roadmap__period--past .roadmap__item:before, .roadmap__period--past .roadmap__item:after,
+    .roadmap__period--past .roadmap__year:before,
+    .roadmap__period--past .roadmap__year:after {
+      background: #264691; }
+  .roadmap__period--past .roadmap__year:first-child:before {
+    display: none; }
+  .roadmap__period--now .roadmap__item {
+    background: #3ABBC3;
+    color: #FFF; }
+    .roadmap__period--now .roadmap__item:after {
+      background: #3ABBC3; }
+  .roadmap__period--now .roadmap__year {
+    background-image: linear-gradient(to bottom, #3494b3, #39b3c0);
+    color: #FFF; }
+  .roadmap__period--now .roadmap__year:before {
+    background-image: linear-gradient(to bottom, #328aae, #3494b3); }
+  .roadmap__period--now .roadmap__year:after {
+    background-image: linear-gradient(to bottom, #39b3c0, #3abbc3); }
+  .roadmap__period--plan .roadmap__item,
+  .roadmap__period--plan .roadmap__year {
+    background: #E7ECF1;
+    color: rgba(28, 29, 32, 0.5); }
+    .roadmap__period--plan .roadmap__item:before, .roadmap__period--plan .roadmap__item:after,
+    .roadmap__period--plan .roadmap__year:before,
+    .roadmap__period--plan .roadmap__year:after {
+      background: #E7ECF1; }
+  .roadmap__period--plan:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: block;
+    width: 4px;
+    height: 85px;
+    margin-left: -2px;
+    background-image: linear-gradient(to bottom, #E7ECF1, transparent);
+    content: ''; }
+
+.roadmap__year {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center; }
+  .roadmap__year:before, .roadmap__year:after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 4px;
+    height: 20px;
+    margin-left: -2px;
+    content: ''; }
+  .roadmap__year:before {
+    top: -20px; }
+  .roadmap__year:after {
+    bottom: -20px; }
+
+.roadmap__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 25px 30px;
+  border-radius: 4px; }
+  .roadmap__item:last-child::after {
+    display: none; }
+  .roadmap__item:after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    display: block;
+    width: 4px;
+    height: 10px;
+    margin-left: -2px;
+    background: #E7ECF1;
+    content: ''; }
+
 .fill {
   display: -ms-flexbox;
   display: flex;
