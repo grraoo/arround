@@ -1,3 +1,29 @@
 .langs {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    &-link {
+      opacity: .4;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &--active {
+        opacity: 1;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
