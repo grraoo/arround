@@ -27,7 +27,7 @@ img {
 .header {
   background-image: linear-gradient(to right, #222953, #264691);
   color: white;
-  padding: 15px 0;
+  padding-bottom: 15px;
   position: relative; }
   .header__top {
     display: -ms-flexbox;
@@ -36,7 +36,7 @@ img {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 15px; }
+    padding-top: 30px; }
     .header__top .logo img {
       width: 100px;
       height: auto; }
@@ -81,7 +81,8 @@ img {
       transform: translate3d(0, 11px, 0); }
 
 .langs {
-  display: none; }
+  display: none;
+  background: #222953; }
 
 .main-header {
   text-align: center;
@@ -408,6 +409,54 @@ img {
     border-radius: 4px;
     content: ''; }
 
+.usecase__item {
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  background: #e7ecf1;
+  border-radius: 4px; }
+
+.usecase__name {
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #264691;
+  text-align: center; }
+
+.usecase__text {
+  opacity: 0.75;
+  font-size: 16px;
+  color: #061D23;
+  text-align: center;
+  line-height: 22px; }
+
+.partners__header {
+  margin-bottom: 40px;
+  opacity: 0.7;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1C1D20;
+  text-align: center;
+  line-height: 30px; }
+
+.partners__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.partners__link {
+  margin-left: 27px;
+  margin-right: 27px; }
+  .partners__link:hover img {
+    filter: grayscale(0%); }
+  .partners__link img {
+    filter: grayscale(100%);
+    transition: .4s filter; }
+
 .sale__info {
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +697,8 @@ img {
   background: #e7ecf1;
   border-radius: 4px;
   padding: 25px 30px;
-  margin: 5px 0; }
+  margin: 5px 0;
+  break-inside: avoid; }
 
 .faq__question {
   font-size: 18px;
@@ -860,7 +910,8 @@ a {
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
-      padding: 10px; }
+      padding: 10px;
+      line-height: 20px; }
       .langs-link {
         opacity: .4;
         font-size: 14px;
@@ -872,4 +923,9 @@ a {
         .langs-link--active {
           opacity: 1; }
           .langs-link--active:hover {
-            text-decoration: none; } }
+            text-decoration: none; }
+    .faq__list {
+      column-count: 2;
+      column-gap: 20px; }
+    .faq__item {
+      margin-bottom: 20px; } }

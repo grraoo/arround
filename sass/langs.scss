@@ -1,10 +1,12 @@
 .langs {
   display: none;
+  background: #222953;
 
   @media (min-width: $desktop) {
     display: flex;
     justify-content: center;
     padding: 10px;
+    line-height: 20px;
 
     &-link {
       opacity: .4;
