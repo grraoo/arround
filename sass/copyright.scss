@@ -1,6 +1,9 @@
 .copyright {
-  display: flex;
   margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 
   &__text {
     opacity: .5;

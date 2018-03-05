@@ -1,12 +1,10 @@
 .slider {}
 
-.slider__arrows {}
-
 .slider__arrow {
   position: absolute;
   top: 50%;
 
-  display: block;
+  display: none;
   width: 48px;
   height: 48px;
   margin-top: -24px;
@@ -24,6 +22,10 @@
   &--next {
     right: -56px;
     transform: scaleX(-1);
+  }
+
+  @media (min-width: ($tablet + (56px * 2))) {
+    display: block;
   }
 
   @media (min-width: $desktop) {
@@ -54,10 +56,11 @@
   margin-left: 5px;
   margin-right: 5px;
 
-  background: #B6BFC8;
+  background-color: #B6BFC8;
   border-radius: 6px;
+  transition: .2s background-color;
 
   &--active {
-    background: #264691;
+    background-color: #264691;
   }
 }

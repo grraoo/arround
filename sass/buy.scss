@@ -6,9 +6,12 @@
   color: #FFF;
 
   &--section {
-    padding: 50px 50px 83px;
+    padding: 40px 0 30px;
     background-image: linear-gradient(90deg, #222953 0%, #264691 100%);
 
+    @media (min-width: $tablet) {
+      padding: 50px 50px 83px;
+    }
     @media (min-width: $desktop) {
       padding-top: 81px;
       padding-bottom: 81px;
@@ -39,10 +42,13 @@
     justify-content: space-between;
 
     width: 880px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .buy__finish {
+  margin-bottom: 8px;
   text-align: center;
 
   @media (min-width: $desktop) {

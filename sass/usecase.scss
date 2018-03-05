@@ -3,6 +3,9 @@
 
 .usecase__container {
   position: relative;
+  background: $c-bggray;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: $desktop) {
     width: 980px;
@@ -10,13 +13,18 @@
 }
 
 .usecase__item {
+  box-sizing: border-box;
   padding-top: 55px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
   padding-bottom: 50px;
 
-  background: $c-bggray;
   border-radius: 4px;
+
+  @media (min-width: $tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (min-width: $desktop) {
     padding-left: 40px;

@@ -9,7 +9,9 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 300px;
+  // width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--pa {
     position: absolute;
@@ -24,6 +26,8 @@ body {
 
   @media (min-width: $tablet) {
     width: 540px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop) {

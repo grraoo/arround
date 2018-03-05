@@ -3,6 +3,8 @@
 }
 
 .sale__info {
+  margin-left: -20px;
+  margin-right: -20px;
   padding: 35px 20px 10px;
 
   background-image: linear-gradient(90deg, #222953 0%, #264691 100%);
@@ -17,7 +19,8 @@
   }
 
   @media (min-width: $desktop) {
-
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -58,10 +61,11 @@
 }
 
 .sale__list {
-  margin: 30px 20px 50px;
+  margin: 30px 0 50px;
   font-size: 16px;
   color: #1C1D20;
   line-height: 22px;
+  padding: 0;
 
   @media (min-width: $desktop) {
     column-count: 2;
@@ -78,6 +82,7 @@
   position: relative;
   margin-bottom: 10px;
   margin-left: 0;
+  padding-left: 30px;
   list-style: none;
 
   &:before {
@@ -85,16 +90,23 @@
     left: 0;
     top: 0;
     display: block;
-    width: 40px;
+    width: 30px;
     color: $c-bgazure;
     content: "✓";
     text-align: center;
+  }
+
+  @media (min-width: $tablet) {
   }
 
   @media (min-width: $desktop) {
     page-break-inside: avoid;
     break-inside: avoid;
     padding-left: 40px;
+
+    &:before {
+      width: 40px;
+    }
   }
 }
 
@@ -111,10 +123,15 @@
 
 .sale__data {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   @media (min-width: $desktop) {
     display: block;
   }
@@ -122,12 +139,17 @@
 
 .sale__graph {
   flex-shrink: 0;
-  width: 310px;
-  height: 310px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   font-size: 0;
   background: url(../img/pie-chart.svg) no-repeat center;
+  background-size: contain;
 
+  @media (min-width: $tablet) {
+    width: 310px;
+    height: 310px;
+  }
   @media (min-width: $desktop) {
     display: flex;
     width: 100%;

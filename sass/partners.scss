@@ -1,5 +1,5 @@
 .partners {
-
+  overflow: hidden;
 }
 
 .partners__header {
@@ -15,11 +15,13 @@
 .partners__list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .partners__link {
   margin-left: 27px;
   margin-right: 27px;
+  flex-shrink: .05;
 
   &:hover {
     img {

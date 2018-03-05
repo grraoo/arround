@@ -12,8 +12,6 @@
 }
 
 .docs__list {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
   align-items: top;
@@ -26,16 +24,19 @@
 
 .docs__link {
   position: relative;
-  width: 50%;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   min-height: 80px;
   margin-bottom: 20px;
+  margin-right: 40px;
   padding-left: 88px;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    margin-right: 0;
+  }
 
   &:before {
     position: absolute;

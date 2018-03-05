@@ -21,11 +21,7 @@
   }
 }
 
-.roadshow__slider {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+.roadshow__slider {}
 
 .roadshow__item {
 
@@ -102,6 +98,10 @@
 }
 
 .roadshow__pagi {
+  @media (min-width: $tablet) {
+    bottom: 50px;
+  }
+
   @media (min-width: $desktop) {
     bottom: 60px;
   }
