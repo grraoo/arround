@@ -1,12 +1,39 @@
 .roadmap {
   margin-bottom: 80px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 100px;
+    margin-bottom: 0;
+  }
 }
 
 .roadmap__period {
   position: relative;
 
+  @media (min-width: $desktop) {
+    background-size: 4px 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   &--past {
-    .roadmap__item,
+    @media (min-width: $desktop) {
+      background-image: linear-gradient(to bottom, #264691, #264691);
+    }
+
+    .roadmap__item {
+      background: #264691;
+      color: #FFF;
+
+      &:before {
+        border-color: #264691;
+      }
+
+      &:after {
+        background: #264691;
+      }
+    }
+
     .roadmap__year {
       background: #264691;
       color: #FFF;
@@ -25,9 +52,17 @@
   }
 
   &--now {
+    @media (min-width: $desktop) {
+      background-image: linear-gradient(to bottom, #3ABBC3, #3ABBC3);
+    }
+
     .roadmap__item {
       background: #3ABBC3;
       color: #FFF;
+
+      &:before {
+        border-color: #3ABBC3;
+      }
 
       &:after {
         background: #3ABBC3;
@@ -37,6 +72,14 @@
     .roadmap__year {
       background-image: linear-gradient(to bottom, #3494b3, #39b3c0);
       color: #FFF;
+
+      @media (min-width: $desktop) {
+
+        &:before {
+          background-image: linear-gradient(to bottom, #264691, #39b3c0);
+        }
+
+      }
     }
 
     .roadmap__year:before {
@@ -49,7 +92,22 @@
   }
 
   &--plan {
-    .roadmap__item,
+    @media (min-width: $desktop) {
+      background-image: linear-gradient(to bottom, #E7ECF1, #E7ECF1);
+    }
+
+    .roadmap__item {
+      background: #E7ECF1;
+      color: rgba(#1C1D20, .5);
+
+      &:before {
+        border-color: #E7ECF1;
+      }
+      &:after {
+        background: #E7ECF1;
+      }
+    }
+
     .roadmap__year {
       background: #E7ECF1;
       color: rgba(#1C1D20, .5);
@@ -57,6 +115,12 @@
       &:before,
       &:after {
         background: #E7ECF1;
+      }
+
+      @media (min-width: $desktop) {
+        &:first-child:before {
+          background-image: linear-gradient(to bottom, #39b3c0, #E7ECF1);
+        }
       }
     }
 
@@ -90,6 +154,15 @@
   line-height: 60px;
   text-align: center;
 
+  @media (min-width: $desktop) {
+    margin-top: 60px;
+
+    &:before {
+      height: 85px;
+      top: -85px;
+    }
+  }
+
   &:before,
   &:after {
     position: absolute;
@@ -118,9 +191,58 @@
   padding: 25px 30px;
   border-radius: 4px;
 
+  @media (min-width: $desktop) {
+    width: 480px;
+    margin-bottom: -25px;
+    // position: relative;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      z-index: 1;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: 100px;
+      background: #FFF;
+      border: 5px solid #264691;
+      border-radius: 50%;
+      content: '';
+    }
+
+    &:after {
+      top: 50%;
+      bottom: auto;
+      left: 100%;
+      width: 108px;
+      height: 4px;
+      margin-left: 0;
+      margin-top: -2px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 480px + 220px;
+
+      &:before {
+        left: auto;
+        right: 100%;
+        margin-right: 100px;
+      }
+
+      &:after {
+        left: auto;
+        right: 100%;
+      }
+    }
+  }
+
   &:last-child {
-    &::after {
-      display: none;
+    @media (max-width: ($desktop - 1px)) {
+      &::after {
+        display: none;
+      }
     }
   }
 

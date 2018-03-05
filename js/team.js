@@ -16,7 +16,7 @@ const team = function() {
       if(openedTeam) {
         openedTeam.classList.remove(`team__item--active`);
       }
-      const currentItem = e.target.parentNode.parentNode;
+      const currentItem = e.target.parentNode.parentNode.parentNode;
       currentItem.classList.add(`team__item--active`);
       currentItem.querySelector(`.team__close`).addEventListener(`click`, closeTeam);
     }

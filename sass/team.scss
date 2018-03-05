@@ -7,6 +7,35 @@
 
   &__close {
     display: none;
+    position: absolute;
+    right: 22px;
+    top: (60px + 20px);
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 0;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin-top: -1px;
+      margin-left: -11px;
+      background: #757577 5px;
+      content: '';
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
   }
 
   &__item {
@@ -24,9 +53,29 @@
         flex-basis: 33%;
       }
       flex-basis: 100%;
+
+      @media (min-width: $desktop) {
+        .team__img-wrap {
+          width: 180px;
+        }
+        .team__close {
+          top: (90px + 20px);
+          right: (25px + 22px);
+        }
+        .team__text {
+          left: 25px;
+          right: 25px;
+
+          &:before {
+            top: (22px + 8px + 20px + 15px + 90px) * -1; // размеры предыдущих блоков снизу вверх
+          }
+        }
+      }
     }
 
     &--active {
+      z-index: 10;
+
       .team__info {
         position: absolute;
         left: 8px;
@@ -36,22 +85,88 @@
 
       .team__close {
         display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
       }
 
       .team__text {
         display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
+        opacity: 1;
+        pointer-events: all;
+
+        &:before {
+          pointer-events: all;
+        }
+      }
+    }
+  }
+
+  &__img-wrap {
+    margin-bottom: 15px;
+
+    img {
+      display: block;
+      border-radius: 4px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      box-shadow: 0 20px 40px 0 rgba(#015B8D,0.15);
+      content: '';
+      opacity: 0;
+      // transition: .3s opacity;
+      pointer-events: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      width: 120px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:hover,
+      .team__item--active & {
+        position: relative;
+
+        &:before {
+          opacity: 1;
+        }
       }
     }
   }
 
   &__text {
     display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    margin-top: 0;
+    padding-top: 10px + 24px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:before {
+      position: absolute;
+      top: (22px + 8px + 20px + 15px + 60px) * -1; // размеры предыдущих блоков снизу вверх
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      display: block;
+      background: #FFFFFF;
+      box-shadow: 0 20px 40px 0 rgba(0,0,0,0.15);
+      border-radius: 4px;
+      content: '';
+    }
   }
 
   &__link {
@@ -65,14 +180,17 @@
   &__name {
     font-weight: bold;
     font-size: 16px;
+    line-height: 20px;
     text-align: center;
     margin: 0;
   }
 
   &__job {
     margin: 0;
+    margin-bottom: 8px;
     opacity: .75;
     font-size: 14px;
+    line-height: 22px;
     text-align: center;
   }
 }

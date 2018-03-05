@@ -98,6 +98,7 @@
 }
 
 .sale__graph {
+  flex-shrink: 0;
   width: 310px;
   height: 310px;
   border-radius: 50%;
@@ -111,14 +112,20 @@
     border-radius: 4px;
     height: 90px;
     background: none;
+    overflow: hidden;
   }
 }
 
 .sale__sect {
+  display: none;
   font-size: 16px;
   line-height: 90px;
   color: rgba(#fff, .6);
   text-align: center;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 
   &--50 {
     background: #3ABBC3;
@@ -138,11 +145,11 @@
 }
 
 .sale__captions {
+  white-space: nowrap;
 
   @media (min-width: $desktop) {
     display: flex;
     align-items: center;
-    white-space: nowrap;
   }
 }
 
