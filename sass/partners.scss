@@ -4,16 +4,17 @@
 
 .partners__header {
   margin-bottom: 40px;
-  opacity: 0.7;
+  opacity: .7;
   font-size: 30px;
   font-weight: bold;
-  color: #1C1D20;
+  color: #1c1d20;
   text-align: center;
   line-height: 30px;
 }
 
 .partners__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -22,15 +23,20 @@
   margin-left: 27px;
   margin-right: 27px;
   flex-shrink: .05;
+  margin-bottom: 10px;
 
-  &:hover {
-    img {
-      filter: grayscale(0%);
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+
+    &:hover {
+      img {
+        filter: grayscale(0%);
+      }
     }
-  }
 
-  img {
-    filter: grayscale(100%);
-    transition: .4s filter;
+    img {
+      filter: grayscale(100%);
+      transition: .4s filter;
+    }
   }
 }

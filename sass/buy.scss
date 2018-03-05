@@ -2,8 +2,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
-
-  color: #FFF;
+  color: #ffffff;
 
   &--section {
     padding: 40px 0 30px;
@@ -12,6 +11,7 @@
     @media (min-width: $tablet) {
       padding: 50px 50px 83px;
     }
+
     @media (min-width: $desktop) {
       padding-top: 81px;
       padding-bottom: 81px;
@@ -24,6 +24,7 @@
         margin-bottom: 0;
       }
     }
+
     .buy__action {
       margin-bottom: 40px;
 
@@ -42,7 +43,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
     width: 880px;
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +55,7 @@
 
   @media (min-width: $desktop) {
     text-align: left;
+    width: 270px;
   }
 }
 
@@ -63,39 +64,43 @@
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: #609CD8;
+  color: #609cd8;
 }
 
 .buy__time {
   font-weight: bold;
   font-size: 35px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .buy__meta {
-  opacity: 0.5;
+  opacity: .5;
   font-size: 16px;
-  color: #FFF;
+  color: #ffffff;
   line-height: 30px;
 }
 
 .buy__action {
-
   p {
     margin: 7px 0 0;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
 
   .btn {
     width: 280px;
-    height: 70px;
-    margin-bottom: 7px;
+    display: block;
   }
 }
 
 .buy__rate {
-  display: inline-block;
+  display: inline-flex;
+
+  img {
+    width: 85px;
+    height: 85px;
+    margin: 0 5px;
+  }
 }

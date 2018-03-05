@@ -1,6 +1,12 @@
 .roadshow {
   padding-top: 70px;
-  background: #1C1D20;
+  background: #1c1d20;
+
+  &__slider {
+    @media (min-width: $desktop) {
+      pointer-events: none;
+    }
+  }
 }
 
 .roadshow__container {
@@ -14,17 +20,14 @@
 }
 
 .roadshow__title {
-  color: #FFF;
+  color: #ffffff;
 
   @media (min-width: $desktop) {
     margin-bottom: 65px;
   }
 }
 
-.roadshow__slider {}
-
 .roadshow__item {
-
   p {
     margin-top: 0;
   }
@@ -44,10 +47,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 130px;
   margin-bottom: 14px;
-  background: #FFF;
+  background: #ffffff;
   border-radius: 4px;
 }
 
@@ -55,14 +57,14 @@
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 25px;
 }
 
 .roadshow__date {
   margin-bottom: 5px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 20px;
 }
 
@@ -76,6 +78,7 @@
 .roadshow__arrows {
   .slider__arrow {
     top: 140px;
+
     @media (min-width: $desktop) {
       top: 210px;
     }
@@ -96,6 +99,10 @@
       right: -84px;
     }
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .roadshow__pagi {
@@ -105,5 +112,6 @@
 
   @media (min-width: $desktop) {
     bottom: 60px;
+    display: none;
   }
 }

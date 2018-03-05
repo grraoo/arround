@@ -6,16 +6,15 @@
   margin-left: -20px;
   margin-right: -20px;
   padding: 35px 20px 10px;
-
   background-image: linear-gradient(90deg, #222953 0%, #264691 100%);
-  box-shadow: 0 30px 60px 0 rgba(38,70,145,0.30);
+  box-shadow: 0 30px 60px 0 rgba(38,70,145,.30);
   border-radius: 4px;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @media (min-width: $desktop) {
@@ -42,28 +41,28 @@
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 400;
-  color: #3ABBC3;
+  color: #3abbc3;
   line-height: 30px;
 }
 
 .sale__value {
   font-size: 35px;
   font-weight: bold;
-  color: #FFF;
+  color: #ffffff;
   line-height: 30px;
 }
 
 .sale__detail {
-  opacity: 0.5;
+  opacity: .5;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 30px;
 }
 
 .sale__list {
   margin: 30px 0 50px;
   font-size: 16px;
-  color: #1C1D20;
+  color: #1c1d20;
   line-height: 22px;
   padding: 0;
 
@@ -110,13 +109,13 @@
   }
 }
 
-.sale__total {}
+
 
 .sale__tname {
-  opacity: 0.7;
+  opacity: .7;
   font-weight: bold;
   font-size: 30px;
-  color: #1C1D20;
+  color: #1c1d20;
   text-align: center;
   line-height: 30px;
 }
@@ -132,6 +131,7 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop) {
     display: block;
   }
@@ -150,6 +150,7 @@
     width: 310px;
     height: 310px;
   }
+
   @media (min-width: $desktop) {
     display: flex;
     width: 100%;
@@ -165,7 +166,7 @@
   display: none;
   font-size: 16px;
   line-height: 90px;
-  color: rgba(#fff, .6);
+  color: rgba(#ffffff, .6);
   text-align: center;
 
   @media (min-width: $desktop) {
@@ -173,19 +174,23 @@
   }
 
   &--50 {
-    background: #3ABBC3;
+    background: #3abbc3;
   }
+
   &--40 {
-    background: #209FA7;
+    background: #209fa7;
   }
+
   &--30 {
     background: #195464;
   }
+
   &--20 {
     background: #222953;
   }
+
   &--00 {
-    background: #BBBCBD;
+    background: #bbbcbd;
   }
 }
 
@@ -209,7 +214,7 @@
 
 .sale__count {
   font-size: 20px;
-  color: #1C1D20;
+  color: #1c1d20;
 
   @media (min-width: $desktop) {
     display: none;
@@ -219,21 +224,25 @@
 .sale__val {
   font-weight: bold;
   font-size: 20px;
-  color: #1C1D20;
+  color: #1c1d20;
 
   &--50 {
-    color: #3ABBC3;
+    color: #3abbc3;
   }
+
   &--40 {
-    color: #209FA7;
+    color: #209fa7;
   }
+
   &--30 {
     color: #195464;
   }
+
   &--20 {
     color: #222953;
   }
+
   &--00 {
-    color: #BBBCBD;
+    color: #bbbcbd;
   }
 }

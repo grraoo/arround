@@ -11,6 +11,19 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      z-index: 50;
+      background-color: #3254a6;
+      left: 0;
+      right: 0;
+      padding-left: calc(50% - 600px);
+      padding-right: calc(50% - 600px);
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
   }
 
   &__buy {

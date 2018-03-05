@@ -63,7 +63,12 @@ const sliders = (function(){
         this.platrofmSlider = new Swiper(this.$platrofmSlider, {
           slidesPerView: 1,
           loop: false,
-          centeredSlides: true
+          centeredSlides: true,
+          pagination: {
+            el: this.$platrofmSlider.find('.slider__pagi'),
+            bulletClass: 'slider__pagi-bullet',
+            bulletActiveClass: 'slider__pagi-bullet--active'
+          },
         });
       }
 
