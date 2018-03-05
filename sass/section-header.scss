@@ -6,7 +6,12 @@
     color: #FFF;
   }
 
+  @media (min-width: $tablet) {
+    font-size: 40px;
+  }
+
   @media (min-width: $desktop) {
     font-size: 50px;
+    margin-top: 0;
   }
 }

@@ -2,6 +2,8 @@
 }
 
 .usecase__container {
+  position: relative;
+
   @media (min-width: $desktop) {
     width: 980px;
   }
@@ -15,6 +17,11 @@
 
   background: $c-bggray;
   border-radius: 4px;
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .usecase__name {
@@ -29,8 +36,29 @@
 
 .usecase__text {
   opacity: 0.75;
-  font-size: 16px;
   color: #061D23;
   text-align: center;
   line-height: 22px;
+
+  @media (min-width: $desktop) {
+    line-height: 27px;
+  }
+}
+
+.usecase__arrows {
+  .slider__arrow--prev {
+    left: -56px;
+
+    @media (min-width: $desktop) {
+      left: -84px;
+    }
+  }
+
+  .slider__arrow--next {
+    right: -56px;
+
+    @media (min-width: $desktop) {
+      right: -84px;
+    }
+  }
 }

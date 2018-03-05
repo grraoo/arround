@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>arround</title>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -171,30 +172,48 @@
     <section class="structure">
       <div class="container">
         <h2 class="section-header">Project Structure</h2>
-        <div class="structure__item">
-          <h4>Mobile Application</h4>
-          <p>Основной способ взаимодействия с миром ARROUND в среде дополненной реальности</p>
-        </div>
-        <div class="structure__item">
-          <h4>Server</h4>
-          <p>Служит для хранения и обработки раундов, распределения и подгрузки данных по локациям, а также для хранения профилей пользователей и другой внутренней информации, необходимой для существования платформы</p>
-        </div>
-        <div class="structure__item">
-          <h4>Portal for Advertisers</h4>
-          <p>Ресурс для создания рекламных раундов и организации рекламных каампаний на площадке ARROUND</p>
-        </div>
-        <div class="structure__item">
-          <h4>Blockchain Server</h4>
-          <p>Гарантирует собственность средств в кошельках пользователей платформы, обеспечивает соблюдение интеллектуальных прав на контент внутри платформы, а также регулирует права на долгосрочную аренду участков AR-пространства внутри ARROUND</p>
+        <div class="structure__content">
+          <div class="structure__row">
+            <div class="structure__item">
+              <h4 class="structure__title">Mobile Application</h4>
+              <p class="structure__descr">Основной способ взаимодействия с миром ARROUND в среде дополненной реальности</p>
+            </div>
+            <div class="structure__item">
+              <h4 class="structure__title">Server</h4>
+              <p class="structure__descr">Служит для хранения и обработки раундов, распределения и подгрузки данных по локациям, а также для хранения профилей пользователей и другой внутренней информации, необходимой для существования платформы</p>
+            </div>
+          </div>
+          <div class="structure__column">
+            <div class="structure__item">
+              <h4 class="structure__title">Portal for Advertisers</h4>
+              <p class="structure__descr">Ресурс для создания рекламных раундов и организации рекламных каампаний на площадке ARROUND</p>
+            </div>
+            <div class="structure__item">
+              <h4 class="structure__title">Blockchain Server</h4>
+              <p class="structure__descr">Гарантирует собственность средств в кошельках пользователей платформы, обеспечивает соблюдение интеллектуальных прав на контент внутри платформы, а также регулирует права на долгосрочную аренду участков AR-пространства внутри ARROUND</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="usecase">
-      <div class="container usecase__container">
-        <div class="usecase__item">
-          <h4 class="usecase__name">Use Case: Retail Shop</h4>
-          <p class="usecase__text">ARROUND allows you to target ads to the platform’s users. For example, if the advertiser places an advertising "round" on the signboard of his shop, when it enters the camera view of ARROUND, the user sees the ad. The advertising message will
+      <div class="container usecase__container slider">
+        <div class="usecase__slider slider__holder">
+          <div class="usecase__item">
+            <h4 class="usecase__name">Use Case: Retail Shop</h4>
+            <p class="usecase__text">ARROUND allows you to target ads to the platform’s users. For example, if the advertiser places an advertising "round" on the signboard of his shop, when it enters the camera view of ARROUND, the user sees the ad. The advertising message will
             depend on the social demographic. For example, if the advertiser is a pharmacy, a young mother will see an ad for diapers, while a middle-aged man might see vitamins</p>
+          </div>
+        </div>
+        <div class="usecase__arrows slider__arrows">
+          <div class="slider__arrow slider__arrow--prev">Previous</div>
+          <div class="slider__arrow slider__arrow--next">Next</div>
+        </div>
+        <div class="usecase__pagi slider__pagi">
+          <div class="slider__pagi-bullet"></div>
+          <div class="slider__pagi-bullet slider__pagi-bullet--active"></div>
+          <div class="slider__pagi-bullet"></div>
+          <div class="slider__pagi-bullet"></div>
         </div>
       </div>
     </section>
@@ -527,37 +546,50 @@
       </div>
     </section>
     <section class="roadshow">
-      <div class="container">
-        <h2 class="section-header section-header--white">Road Show</h2>
-        <div class="roadshow__item">
-          <div class="roadshow__img">
-            <img src="img/roadshow-logo-01.png" alt="Blockchain Economic Forum">
+      <div class="container roadshow__container slider">
+        <h2 class="roadshow__title section-header section-header--white">Road Show</h2>
+        <div class="roadshow__slider slider__holder">
+          <div class="roadshow__item">
+            <div class="roadshow__img">
+              <img src="img/roadshow-logo-01.png" alt="Blockchain Economic Forum">
+            </div>
+            <p class="roadshow__name">Blockchain Economic Forum</p>
+            <p class="roadshow__date">February 4-6, 2018</p>
+            <p class="roadshow__place">Singapore</p>
           </div>
-          <p class="roadshow__name">Blockchain Economic Forum</p>
-          <p class="roadshow__date">February 4-6, 2018</p>
-          <p class="roadshow__place">Singapore</p>
+          <div class="roadshow__item">
+            <div class="roadshow__img">
+              <img src="img/roadshow-logo-02.png" alt="Blockchain Economic Forum">
+            </div>
+            <p class="roadshow__name">Blockchain Economic Forum</p>
+            <p class="roadshow__date">February 4-6, 2018</p>
+            <p class="roadshow__place">Singapore</p>
+          </div>
+          <div class="roadshow__item">
+            <div class="roadshow__img">
+              <img src="img/roadshow-logo-03.png" alt="Blockchain Economic Forum">
+            </div>
+            <p class="roadshow__name">Blockchain Economic Forum</p>
+            <p class="roadshow__date">February 4-6, 2018</p>
+            <p class="roadshow__place">Singapore</p>
+          </div>
         </div>
-        <div class="roadshow__item">
-          <div class="roadshow__img">
-            <img src="img/roadshow-logo-02.png" alt="Blockchain Economic Forum">
-          </div>
-          <p class="roadshow__name">Blockchain Economic Forum</p>
-          <p class="roadshow__date">February 4-6, 2018</p>
-          <p class="roadshow__place">Singapore</p>
+
+        <div class="roadshow__arrows slider__arrows">
+          <div class="slider__arrow slider__arrow--prev">Previous</div>
+          <div class="slider__arrow slider__arrow--next">Next</div>
         </div>
-        <div class="roadshow__item">
-          <div class="roadshow__img">
-            <img src="img/roadshow-logo-03.png" alt="Blockchain Economic Forum">
-          </div>
-          <p class="roadshow__name">Blockchain Economic Forum</p>
-          <p class="roadshow__date">February 4-6, 2018</p>
-          <p class="roadshow__place">Singapore</p>
+        <div class="roadshow__pagi slider__pagi">
+          <div class="slider__pagi-bullet"></div>
+          <div class="slider__pagi-bullet slider__pagi-bullet--active"></div>
+          <div class="slider__pagi-bullet"></div>
+          <div class="slider__pagi-bullet"></div>
         </div>
       </div>
     </section>
     <section class="faq">
       <div class="container">
-        <h2 class="section-header">FAQ</h2>
+        <h2 class="faq__title section-header">FAQ</h2>
         <ul class="faq__list">
           <li class="faq__item">
             <b class="faq__question">What are ARROUND tokens and what are they used for?</b>

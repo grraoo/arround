@@ -1,4 +1,14 @@
 .faq {
+  &__title {
+    margin-top: 75px;
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+  }
+
   &__list {
     padding: 0;
     list-style: none;
@@ -13,7 +23,7 @@
     background: $c-bggray;
     border-radius: 4px;
     padding: 25px 30px;
-    margin: 5px 0;
+    margin-bottom: 10px;
     page-break-inside: avoid;
     break-inside: avoid;
 
