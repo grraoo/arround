@@ -1,13 +1,35 @@
 .platform {
-  margin-bottom: 70px;
+  position: relative;
+  z-index: 10;
+
+  @media (max-width: $desktop - 1px) {
+    overflow: hidden;
+  }
+}
+
+.platform__title {
+  margin-bottom: 60px;
+}
+
+.platform__slider {
+  overflow: visible;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
 }
 
 .platform__list {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  // display: flex;
+  // align-items: flex-start;
+  padding-bottom: 70px;
+
+  @media (min-width: $desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 .platform__item {
@@ -15,8 +37,9 @@
   z-index: 1;
   flex-basis: 270px;
 
-  &:hover {
+  &.swiper-slide-active {
     z-index: 10;
+
     .platform__text {
       opacity: 1;
       pointer-events: all;
@@ -25,6 +48,16 @@
 
   @media (min-width: $desktop) {
     flex-basis: 380px;
+    margin-bottom: 60px;
+
+    &:hover {
+      z-index: 10;
+
+      .platform__text {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
   }
 }
 
@@ -61,7 +94,7 @@
 }
 
 .platform__text {
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 0;
   right: 0;
@@ -77,6 +110,10 @@
   opacity: 0;
   pointer-events: none;
   transition: .2s opacity;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+  }
 
   &:before {
     position: absolute;

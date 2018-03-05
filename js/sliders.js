@@ -11,6 +11,8 @@ const sliders = (function(){
 
     //Инициализация модуля
     init: function () {
+      this.isDesktop = window.matchMedia('(min-width:1200px)').matches;
+
       this.$sliders = $(".slider");
       this.$sliderUsecases = $(".slider--usecases");
 
@@ -54,6 +56,16 @@ const sliders = (function(){
           }
         }
       });
+
+      this.$platrofmSlider = $(".platform__slider");
+
+      if (!this.isDesktop) {
+        this.platrofmSlider = new Swiper(this.$platrofmSlider, {
+          slidesPerView: 1,
+          loop: false,
+          centeredSlides: true
+        });
+      }
 
       // var that = this;
       // this.$sliders.each(function (i, el) {

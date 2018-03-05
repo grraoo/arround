@@ -12,12 +12,27 @@
     align-items: center;
     padding-top: 30px;
   }
-}
 
-.header__buy {
-  margin-bottom: 192px;
+  &__buy {
+    margin-bottom: 192px;
 
-  @media (min-width: $desktop) {
-    margin-bottom: 202px;
+    @media (min-width: $desktop) {
+      margin-bottom: 202px;
+    }
+  }
+
+  &__bg-pan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 321px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/city-mobile.svg);
+
+    @media (min-width: $desktop) {
+      background-image: url(../img/city.svg);
+    }
   }
 }

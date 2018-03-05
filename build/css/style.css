@@ -32,15 +32,6 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px; }
-  .container--pa {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 321px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-image: url(../img/city-mobile.svg); }
 
 p {
   font-size: 16px;
@@ -65,9 +56,17 @@ img {
     -ms-flex-align: center;
         align-items: center;
     padding-top: 30px; }
-
-.header__buy {
-  margin-bottom: 192px; }
+  .header__buy {
+    margin-bottom: 192px; }
+  .header__bg-pan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 321px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/city-mobile.svg); }
 
 .menu {
   display: block; }
@@ -175,6 +174,10 @@ img {
     .buy--section .buy__action {
       margin-bottom: 40px; }
 
+.buy__content {
+  padding-left: 0;
+  padding-right: 0; }
+
 .buy__finish {
   margin-bottom: 8px;
   text-align: center; }
@@ -214,7 +217,9 @@ img {
 
 .section-header {
   color: #264691;
-  text-align: center; }
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px; }
   .section-header--white {
     color: #FFF; }
 
@@ -773,6 +778,9 @@ button.swiper-pagination-bullet {
   .slider__pagi-bullet--active {
     background-color: #264691; }
 
+.about__title {
+  text-align: left; }
+
 .feat-partner {
   margin-top: 30px;
   padding-right: 20px;
@@ -930,8 +938,7 @@ button.swiper-pagination-bullet {
 
 .structure {
   display: none;
-  margin-bottom: 200px;
-  margin-top: 150px; }
+  margin-bottom: 200px; }
 
 .structure__content {
   display: -ms-flexbox;
@@ -968,25 +975,29 @@ button.swiper-pagination-bullet {
   line-height: 22px; }
 
 .platform {
-  margin-bottom: 70px; }
+  position: relative;
+  z-index: 10; }
+
+.platform__title {
+  margin-bottom: 60px; }
+
+.platform__slider {
+  overflow: visible;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .platform__list {
-  display: -ms-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  padding-bottom: 70px; }
 
 .platform__item {
   position: relative;
   z-index: 1;
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px; }
-  .platform__item:hover {
+  .platform__item.swiper-slide-active {
     z-index: 10; }
-    .platform__item:hover .platform__text {
+    .platform__item.swiper-slide-active .platform__text {
       opacity: 1;
       pointer-events: all; }
 
@@ -1027,7 +1038,7 @@ button.swiper-pagination-bullet {
   text-align: center; }
 
 .platform__text {
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 0;
   right: 0;
@@ -1063,18 +1074,18 @@ button.swiper-pagination-bullet {
 
 .usecase__item {
   box-sizing: border-box;
-  padding-top: 55px;
+  padding-top: 50px;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 50px;
   border-radius: 4px; }
 
 .usecase__name {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   margin-top: 0;
   font-size: 35px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1;
   color: #264691;
   text-align: center; }
 
@@ -1413,6 +1424,9 @@ button.swiper-pagination-bullet {
   color: #777777;
   line-height: 20px; }
 
+.roadshow__arrows .slider__arrow {
+  top: 140px; }
+
 .roadshow__arrows .slider__arrow--prev {
   left: -56px; }
 
@@ -1454,31 +1468,29 @@ button.swiper-pagination-bullet {
     width: 100%;
     max-width: 50vw; }
 
-.faq__title {
-  margin-top: 75px;
-  margin-bottom: 30px; }
-
-.faq__list {
-  padding: 0;
-  list-style: none; }
-
-.faq__item {
-  background: #e7ecf1;
-  border-radius: 4px;
-  padding: 25px 30px;
-  margin-bottom: 10px;
-  break-inside: avoid; }
-
-.faq__question {
-  font-size: 18px;
-  color: #264691;
-  line-height: 24px; }
-
-.faq__answer {
-  font-size: 14px;
-  line-height: 20px; }
-  .faq__answer p {
-    margin: .2em 0; }
+.faq {
+  margin-bottom: 40px; }
+  .faq__title {
+    margin-top: 75px;
+    margin-bottom: 30px; }
+  .faq__list {
+    padding: 0;
+    list-style: none; }
+  .faq__item {
+    background: #e7ecf1;
+    border-radius: 4px;
+    padding: 25px 30px;
+    margin-bottom: 10px;
+    break-inside: avoid; }
+  .faq__question {
+    font-size: 18px;
+    color: #264691;
+    line-height: 24px; }
+  .faq__answer {
+    font-size: 14px;
+    line-height: 20px; }
+    .faq__answer p {
+      margin: .2em 0; }
 
 .footer {
   background-image: linear-gradient(to right, #222953 0%, #264691 100%);
@@ -1711,8 +1723,7 @@ button.swiper-pagination-bullet {
       .buy--section {
         padding: 50px 50px 83px; }
     .section-header {
-      font-size: 40px;
-      margin-top: 0; }
+      font-size: 40px; }
     .logo img {
       width: 184px; }
     .docs__link {
@@ -1754,8 +1765,10 @@ button.swiper-pagination-bullet {
       height: 310px; }
   .roadshow__pagi {
     bottom: 50px; }
-    .faq__title {
-      margin-top: 75px; }
+    .faq {
+      margin-bottom: 70px; }
+      .faq__title {
+        margin-top: 75px; }
     .email__input {
       text-align: left; }
     .copyright {
@@ -1780,13 +1793,13 @@ button.swiper-pagination-bullet {
     margin-bottom: 75px; }
     .container {
       width: 1180px; }
-      .container--pa {
-        background-image: url(../img/city.svg); }
     p {
       font-size: 20px;
       line-height: 30px; }
-    .header__buy {
-      margin-bottom: 202px; }
+      .header__buy {
+        margin-bottom: 202px; }
+      .header__bg-pan {
+        background-image: url(../img/city.svg); }
       .menu__list {
         display: -ms-flexbox;
         display: flex;
@@ -1824,16 +1837,16 @@ button.swiper-pagination-bullet {
           margin-bottom: 0; }
         .buy--section .buy__action {
           margin-bottom: 0; }
-  .buy__content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-        align-items: flex-start;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    width: 880px;
-    margin-left: auto;
-    margin-right: auto; }
+    .buy__content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 880px;
+      margin-left: auto;
+      margin-right: auto; }
     .buy__finish {
       text-align: left; }
     .section-header {
@@ -1858,10 +1871,9 @@ button.swiper-pagination-bullet {
         justify-content: space-between; }
   .about__content {
     width: 680px; }
-  .about__title {
-    text-align: left;
-    margin-bottom: 18px;
-    margin-top: 70px; }
+    .about__title {
+      margin-bottom: 18px;
+      margin-top: 70px; }
   .about__partner {
     width: 380px; }
     .feat-partner {
@@ -1882,9 +1894,22 @@ button.swiper-pagination-bullet {
       margin-bottom: 15px; }
     .structure {
       display: block; }
+    .platform__slider {
+      width: auto; }
+    .platform__list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
     .platform__item {
       -ms-flex-preferred-size: 380px;
-          flex-basis: 380px; }
+          flex-basis: 380px;
+      margin-bottom: 60px; }
+      .platform__item:hover {
+        z-index: 10; }
+        .platform__item:hover .platform__text {
+          opacity: 1;
+          pointer-events: all; }
+    .platform__text {
+      position: absolute; }
     .usecase__container {
       width: 980px; }
     .usecase__item {
@@ -2000,8 +2025,8 @@ button.swiper-pagination-bullet {
       margin-bottom: 65px; }
   .roadshow__item {
     width: 280px; }
-  .roadshow__arrows .slider__arrow {
-    top: 210px; }
+    .roadshow__arrows .slider__arrow {
+      top: 210px; }
     .roadshow__arrows .slider__arrow--prev {
       left: -84px; }
     .roadshow__arrows .slider__arrow--next {
@@ -2010,14 +2035,16 @@ button.swiper-pagination-bullet {
     bottom: 60px; }
       .fill__note--dynamic {
         max-width: 920px; }
-    .faq__title {
-      margin-top: 80px;
-      margin-bottom: 40px; }
-    .faq__list {
-      column-count: 2;
-      column-gap: 20px; }
-    .faq__item {
-      margin-bottom: 20px; }
+    .faq {
+      margin-bottom: 120px; }
+      .faq__title {
+        margin-top: 80px;
+        margin-bottom: 40px; }
+      .faq__list {
+        column-count: 2;
+        column-gap: 20px; }
+      .faq__item {
+        margin-bottom: 20px; }
       .team__item--main .team__img-wrap {
         width: 180px; }
       .team__item--main .team__close {
@@ -2041,6 +2068,8 @@ button.swiper-pagination-bullet {
           opacity: 1; } }
 
 @media (max-width: 1199px) {
+    .platform {
+      overflow: hidden; }
     .roadmap__item:last-child::after {
       display: none; }
   .roadshow__item:last-child {
