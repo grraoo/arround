@@ -19,6 +19,18 @@ body {
     padding-right: 0;
   }
 
+  @media (min-width: $tablet) {
+    width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      width: 1180px;
+    }
+  }
+
   @media (min-width: $desktop) {
     width: 1180px;
   }

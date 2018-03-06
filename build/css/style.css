@@ -87,8 +87,8 @@ img {
     padding: 0;
     margin: 0; }
   .menu__list-item {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 9px;
+    margin-right: 9px;
     font-weight: 400;
     font-size: 14px; }
     .menu__list-item .active {
@@ -216,15 +216,17 @@ img {
   color: #ffffff;
   line-height: 30px; }
 
-.buy__action p {
-  margin: 7px 0 0;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center; }
-
-.buy__action .btn {
-  width: 280px;
-  display: block; }
+.buy__action {
+  margin-bottom: 10px; }
+  .buy__action p {
+    margin: 7px 0 0;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center; }
+  .buy__action .btn {
+    width: 280px;
+    display: block;
+    margin: 0 auto; }
 
 .buy__rate {
   display: -ms-inline-flexbox;
@@ -1752,6 +1754,10 @@ button.swiper-pagination-bullet {
       width: 540px;
       padding-left: 0;
       padding-right: 0; }
+    .container {
+      width: 540px;
+      padding-left: 0;
+      padding-right: 0; }
       .buy--section {
         padding: 50px 50px 83px; }
     .section-header {
@@ -1813,11 +1819,15 @@ button.swiper-pagination-bullet {
         -ms-flex-preferred-size: 33%;
             flex-basis: 33%; } }
 
+@media (min-width: 580px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 580px) and (min-resolution: 192dpi) {
+    .container {
+      width: 1180px; } }
+
 @media (min-width: 692px) {
     .slider__arrow {
       display: block; } }
 
-@media (min-width: 1145px) {
+@media (min-width: 1200px) {
     body {
       font-size: 20px;
       line-height: 1.5; }
@@ -2112,7 +2122,7 @@ button.swiper-pagination-bullet {
         .team__item--active .team__img-wrap:before {
           opacity: 1; } }
 
-@media (max-width: 1144px) {
+@media (max-width: 1199px) {
     .platform {
       overflow: hidden; }
     .roadmap__item:last-child::after {
