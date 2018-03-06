@@ -1121,7 +1121,8 @@ button.swiper-pagination-bullet {
   right: -56px; }
 
 .partners {
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 50px; }
 
 .partners__header {
   margin-bottom: 40px;
@@ -1816,7 +1817,7 @@ button.swiper-pagination-bullet {
     .slider__arrow {
       display: block; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1145px) {
     body {
       font-size: 20px;
       line-height: 1.5; }
@@ -2111,7 +2112,7 @@ button.swiper-pagination-bullet {
         .team__item--active .team__img-wrap:before {
           opacity: 1; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1144px) {
     .platform {
       overflow: hidden; }
     .roadmap__item:last-child::after {

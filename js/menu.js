@@ -1,5 +1,5 @@
 const menu = function () {
-  const menubar = document.querySelector('.header__top');
+  const menubar = document.querySelector('.header__top').cloneNode(true);
 
   const isVisibleTop = function (elem) {
     return elem.getBoundingClientRect().top < 64;
@@ -31,8 +31,9 @@ const menu = function () {
   window.addEventListener(`scroll`, function (e) {
     if (window.pageYOffset > 100) {
       menubar.classList.add('header__top--fixed');
+      document.body.appendChild(menubar);
     } else {
-      menubar.classList.remove('header__top--fixed');
+      menubar.remove();
     }
     for (var i = 0; i < hrefs.length; i++) {
       let link = menubar.querySelector(`[href="${hrefs[i]}"]`);
